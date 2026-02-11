@@ -1,0 +1,1404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AiFlowDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ProductVersion="12.1.0.744">
+  <IsFolder>false</IsFolder>
+  <Id>0</Id>
+  <IsNewRecord>false</IsNewRecord>
+  <Description />
+  <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+  <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+  <Views />
+  <AutoLayoutOnNextLoad>false</AutoLayoutOnNextLoad>
+  <ExplicitAnchors />
+  <Actions>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>b204818d-6c47-4daa-8813-8df73eb654f4</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>b204818d-6c47-4daa-8813-8df73eb654f4</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>AiStart</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>39</Height>
+            <Width>110</Width>
+            <X>780</X>
+            <Y>185</Y>
+            <IsExpanded>false</IsExpanded>
+            <ActualExpandedHeight>0</ActualExpandedHeight>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>Start</Name>
+      </ActionProperties>
+      <AiFlowItemDataStart>
+        <Name>Start</Name>
+        <IsShared>false</IsShared>
+        <PythonCode>def build_message(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; TemplateParams :  &#xD;
+&#xD;
+    Name = "FinGuard Technical Lead" &#xD;
+&#xD;
+    return TemplateParams(Name) </PythonCode>
+        <ReturnVariable>result</ReturnVariable>
+        <StateLayout IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Start</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>false</IsReadOnly>
+        </StateLayout>
+        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Start</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>false</IsReadOnly>
+        </Layout>
+        <Template>
+          <DocumentDescription />
+          <SystemPrompt />
+          <UserPrompt />
+          <UserPromptTemplateName />
+          <TemplateType>Template</TemplateType>
+          <UseClusterMasterPrompt>false</UseClusterMasterPrompt>
+          <Llm>
+            <Id>cb50eecc-5c5f-432f-9885-39c358616b35</Id>
+            <StreamResponseToUser>false</StreamResponseToUser>
+            <ReturnsStructuredOutput>false</ReturnsStructuredOutput>
+            <OutputLayout IsHierarchicalFile="false">
+              <IsFolder>false</IsFolder>
+              <Id>0</Id>
+              <IsNewRecord>false</IsNewRecord>
+              <Name>Template</Name>
+              <Description />
+              <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+              <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+              <IsSharedLayout>false</IsSharedLayout>
+              <LayoutBuildingOptions>
+                <RecordType>Record</RecordType>
+                <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+                <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+              </LayoutBuildingOptions>
+              <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+              <Fields />
+              <Children />
+              <Referenced />
+              <ValidationRules />
+              <IsReadOnly>false</IsReadOnly>
+            </OutputLayout>
+            <WorkingMemoryContextWindow>50</WorkingMemoryContextWindow>
+            <MaxAgentCallDepth>5</MaxAgentCallDepth>
+            <Name>CompletionLlm</Name>
+            <Parameters>
+              <Temperature>0.5</Temperature>
+              <TopP>1</TopP>
+              <MaxTokens>4096</MaxTokens>
+              <Timeout>120</Timeout>
+            </Parameters>
+            <Memory>
+              <IncludeUserContext>false</IncludeUserContext>
+              <IncludeWorkingMemory>false</IncludeWorkingMemory>
+              <IncludeParentsContext>false</IncludeParentsContext>
+              <IncludeAncestralContext>false</IncludeAncestralContext>
+              <LimitToolCallsInContext>false</LimitToolCallsInContext>
+              <ToolCallLimit>10</ToolCallLimit>
+            </Memory>
+          </Llm>
+          <FilePath />
+          <Name>Template</Name>
+          <Text>{AgentName} is online. 🚀&#xD;
+&#xD;
+I am your Technical Stock Analyst. I can provide deep-dive technical insights, support/resistance levels, and trend analysis for major stocks.&#xD;
+&#xD;
+Quick Start Tickers:&#xD;
+&#xD;
+🍏 AAPL (Apple Inc.)&#xD;
+&#xD;
+🍟 NVDA (NVIDIA Corp)&#xD;
+&#xD;
+🚀 TSLA (Tesla, Inc.)&#xD;
+&#xD;
+☁️ MSFT (Microsoft)&#xD;
+&#xD;
+🔍 GOOGL (Alphabet Inc.)&#xD;
+&#xD;
+Instructions: Please enter a valid Stock Ticker Symbol (e.g., AAPL) to begin the analysis.</Text>
+          <CanTemplateBeEmpty>true</CanTemplateBeEmpty>
+          <Functions />
+          <ReturnVariable>result</ReturnVariable>
+          <PythonMethodName>run</PythonMethodName>
+          <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+            <IsFolder>false</IsFolder>
+            <Id>0</Id>
+            <IsNewRecord>false</IsNewRecord>
+            <Name>Template</Name>
+            <Description />
+            <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+            <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+            <IsSharedLayout>false</IsSharedLayout>
+            <LayoutBuildingOptions>
+              <RecordType>Record</RecordType>
+              <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+              <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+            </LayoutBuildingOptions>
+            <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+            <Fields />
+            <Children />
+            <Referenced />
+            <ValidationRules />
+            <IsReadOnly>false</IsReadOnly>
+          </Layout>
+        </Template>
+      </AiFlowItemDataStart>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>52534d3e-972b-426d-8a4e-586758c694da</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>52534d3e-972b-426d-8a4e-586758c694da</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>AiEnd</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>39</Height>
+            <Width>110</Width>
+            <X>780</X>
+            <Y>185</Y>
+            <IsExpanded>false</IsExpanded>
+            <ActualExpandedHeight>0</ActualExpandedHeight>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>End</Name>
+      </ActionProperties>
+      <AiFlowItemDataEnd>
+        <Name>End</Name>
+        <IsShared>false</IsShared>
+        <PythonCode>def build_message(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; TemplateParams :  &#xD;
+&#xD;
+    Name = "Chat Agent" &#xD;
+&#xD;
+    return TemplateParams(Name) </PythonCode>
+        <ReturnVariable>result</ReturnVariable>
+        <StateLayout IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>End</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>false</IsReadOnly>
+        </StateLayout>
+        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>End</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>false</IsReadOnly>
+        </Layout>
+        <Template>
+          <DocumentDescription />
+          <SystemPrompt />
+          <UserPrompt />
+          <UserPromptTemplateName />
+          <TemplateType>Template</TemplateType>
+          <UseClusterMasterPrompt>false</UseClusterMasterPrompt>
+          <Llm>
+            <Id>54963d45-0a1e-4e85-9193-480eb2dec24b</Id>
+            <StreamResponseToUser>false</StreamResponseToUser>
+            <ReturnsStructuredOutput>false</ReturnsStructuredOutput>
+            <OutputLayout IsHierarchicalFile="false">
+              <IsFolder>false</IsFolder>
+              <Id>0</Id>
+              <IsNewRecord>false</IsNewRecord>
+              <Name>Template</Name>
+              <Description />
+              <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+              <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+              <IsSharedLayout>false</IsSharedLayout>
+              <LayoutBuildingOptions>
+                <RecordType>Record</RecordType>
+                <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+                <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+              </LayoutBuildingOptions>
+              <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+              <Fields />
+              <Children />
+              <Referenced />
+              <ValidationRules />
+              <IsReadOnly>false</IsReadOnly>
+            </OutputLayout>
+            <WorkingMemoryContextWindow>50</WorkingMemoryContextWindow>
+            <MaxAgentCallDepth>5</MaxAgentCallDepth>
+            <Name>CompletionLlm</Name>
+            <Parameters>
+              <Temperature>0.5</Temperature>
+              <TopP>1</TopP>
+              <MaxTokens>4096</MaxTokens>
+              <Timeout>120</Timeout>
+            </Parameters>
+            <Memory>
+              <IncludeUserContext>false</IncludeUserContext>
+              <IncludeWorkingMemory>false</IncludeWorkingMemory>
+              <IncludeParentsContext>false</IncludeParentsContext>
+              <IncludeAncestralContext>false</IncludeAncestralContext>
+              <LimitToolCallsInContext>false</LimitToolCallsInContext>
+              <ToolCallLimit>10</ToolCallLimit>
+            </Memory>
+          </Llm>
+          <FilePath />
+          <Name>Template</Name>
+          <Text>{AgentName} has ended.</Text>
+          <CanTemplateBeEmpty>true</CanTemplateBeEmpty>
+          <Functions />
+          <ReturnVariable>result</ReturnVariable>
+          <PythonMethodName>run</PythonMethodName>
+          <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+            <IsFolder>false</IsFolder>
+            <Id>0</Id>
+            <IsNewRecord>false</IsNewRecord>
+            <Name>Template</Name>
+            <Description />
+            <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+            <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+            <IsSharedLayout>false</IsSharedLayout>
+            <LayoutBuildingOptions>
+              <RecordType>Record</RecordType>
+              <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+              <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+            </LayoutBuildingOptions>
+            <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+            <Fields />
+            <Children />
+            <Referenced />
+            <ValidationRules />
+            <IsReadOnly>false</IsReadOnly>
+          </Layout>
+        </Template>
+      </AiFlowItemDataEnd>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>6a89a214-dedc-4fdd-8f8f-111072894ced</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>6a89a214-dedc-4fdd-8f8f-111072894ced</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>AiAgentState</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>39</Height>
+            <Width>110</Width>
+            <X>593.79144</X>
+            <Y>-12.936694</Y>
+            <IsExpanded>false</IsExpanded>
+            <ActualExpandedHeight>0</ActualExpandedHeight>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>Properties</Name>
+      </ActionProperties>
+      <AiFlowItemDataState>
+        <Name>Properties</Name>
+        <IsShared>false</IsShared>
+        <PythonCode>def build_prompt(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; TemplateParams : &#xD;
+    return TemplateParams()</PythonCode>
+        <ReturnVariable>result</ReturnVariable>
+        <StateLayout IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Properties</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced>
+            <BaseLayout xsi:type="RecordLayout" IsHierarchicalFile="false">
+              <IsFolder>false</IsFolder>
+              <Id>0</Id>
+              <IsNewRecord>false</IsNewRecord>
+              <Name>Input</Name>
+              <Description />
+              <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+              <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+              <IsSharedLayout>false</IsSharedLayout>
+              <LayoutBuildingOptions>
+                <RecordType>Record</RecordType>
+                <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+                <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+              </LayoutBuildingOptions>
+              <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+              <Fields />
+              <Children />
+              <Referenced />
+              <ValidationRules />
+              <IsReadOnly>false</IsReadOnly>
+            </BaseLayout>
+            <BaseLayout xsi:type="RecordLayout" IsHierarchicalFile="false">
+              <IsFolder>false</IsFolder>
+              <Id>0</Id>
+              <IsNewRecord>false</IsNewRecord>
+              <Name>Output</Name>
+              <Description />
+              <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+              <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+              <IsSharedLayout>false</IsSharedLayout>
+              <LayoutBuildingOptions>
+                <RecordType>Record</RecordType>
+                <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+                <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+              </LayoutBuildingOptions>
+              <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+              <Fields />
+              <Children />
+              <Referenced />
+              <ValidationRules />
+              <IsReadOnly>false</IsReadOnly>
+            </BaseLayout>
+            <BaseLayout xsi:type="RecordLayout" IsHierarchicalFile="false">
+              <IsFolder>false</IsFolder>
+              <Id>0</Id>
+              <IsNewRecord>false</IsNewRecord>
+              <Name>State</Name>
+              <Description />
+              <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+              <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+              <IsSharedLayout>false</IsSharedLayout>
+              <LayoutBuildingOptions>
+                <RecordType>Record</RecordType>
+                <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+                <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+              </LayoutBuildingOptions>
+              <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+              <Fields />
+              <Children />
+              <Referenced />
+              <ValidationRules />
+              <IsReadOnly>false</IsReadOnly>
+            </BaseLayout>
+          </Referenced>
+          <ValidationRules />
+          <IsReadOnly>true</IsReadOnly>
+        </StateLayout>
+        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Properties</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced>
+            <BaseLayout xsi:type="RecordLayout" IsHierarchicalFile="false">
+              <IsFolder>false</IsFolder>
+              <Id>0</Id>
+              <IsNewRecord>false</IsNewRecord>
+              <Name>Input</Name>
+              <Description />
+              <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+              <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+              <IsSharedLayout>false</IsSharedLayout>
+              <LayoutBuildingOptions>
+                <RecordType>Record</RecordType>
+                <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+                <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+              </LayoutBuildingOptions>
+              <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+              <Fields />
+              <Children />
+              <Referenced />
+              <ValidationRules />
+              <IsReadOnly>false</IsReadOnly>
+            </BaseLayout>
+            <BaseLayout xsi:type="RecordLayout" IsHierarchicalFile="false">
+              <IsFolder>false</IsFolder>
+              <Id>0</Id>
+              <IsNewRecord>false</IsNewRecord>
+              <Name>Output</Name>
+              <Description />
+              <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+              <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+              <IsSharedLayout>false</IsSharedLayout>
+              <LayoutBuildingOptions>
+                <RecordType>Record</RecordType>
+                <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+                <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+              </LayoutBuildingOptions>
+              <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+              <Fields />
+              <Children />
+              <Referenced />
+              <ValidationRules />
+              <IsReadOnly>false</IsReadOnly>
+            </BaseLayout>
+            <BaseLayout xsi:type="RecordLayout" IsHierarchicalFile="false">
+              <IsFolder>false</IsFolder>
+              <Id>0</Id>
+              <IsNewRecord>false</IsNewRecord>
+              <Name>State</Name>
+              <Description />
+              <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+              <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+              <IsSharedLayout>false</IsSharedLayout>
+              <LayoutBuildingOptions>
+                <RecordType>Record</RecordType>
+                <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+                <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+              </LayoutBuildingOptions>
+              <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+              <Fields />
+              <Children />
+              <Referenced />
+              <ValidationRules />
+              <IsReadOnly>false</IsReadOnly>
+            </BaseLayout>
+          </Referenced>
+          <ValidationRules />
+          <IsReadOnly>true</IsReadOnly>
+        </Layout>
+        <Template>
+          <DocumentDescription />
+          <SystemPrompt>You are a helpful AI assistant. Always provide clear, accurate, and helpful responses to user queries.</SystemPrompt>
+          <UserPrompt />
+          <UserPromptTemplateName />
+          <TemplateType>Template</TemplateType>
+          <UseClusterMasterPrompt>false</UseClusterMasterPrompt>
+          <Llm>
+            <Id>72d90363-cc62-43fa-93d3-002b01fa92a2</Id>
+            <StreamResponseToUser>false</StreamResponseToUser>
+            <ReturnsStructuredOutput>false</ReturnsStructuredOutput>
+            <OutputLayout IsHierarchicalFile="false">
+              <IsFolder>false</IsFolder>
+              <Id>0</Id>
+              <IsNewRecord>false</IsNewRecord>
+              <Name>Template</Name>
+              <Description />
+              <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+              <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+              <IsSharedLayout>false</IsSharedLayout>
+              <LayoutBuildingOptions>
+                <RecordType>Record</RecordType>
+                <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+                <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+              </LayoutBuildingOptions>
+              <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+              <Fields />
+              <Children />
+              <Referenced />
+              <ValidationRules />
+              <IsReadOnly>false</IsReadOnly>
+            </OutputLayout>
+            <WorkingMemoryContextWindow>50</WorkingMemoryContextWindow>
+            <MaxAgentCallDepth>5</MaxAgentCallDepth>
+            <Name>CompletionLlm</Name>
+            <Parameters>
+              <Temperature>0.5</Temperature>
+              <TopP>1</TopP>
+              <MaxTokens>4096</MaxTokens>
+              <Timeout>120</Timeout>
+            </Parameters>
+            <Memory>
+              <IncludeUserContext>false</IncludeUserContext>
+              <IncludeWorkingMemory>false</IncludeWorkingMemory>
+              <IncludeParentsContext>false</IncludeParentsContext>
+              <IncludeAncestralContext>false</IncludeAncestralContext>
+              <LimitToolCallsInContext>false</LimitToolCallsInContext>
+              <ToolCallLimit>10</ToolCallLimit>
+            </Memory>
+          </Llm>
+          <FilePath />
+          <Name>Template</Name>
+          <Text>You are a helpful AI assistant designed to provide accurate and informative responses. You should be professional, friendly, and concise in your communications.</Text>
+          <CanTemplateBeEmpty>true</CanTemplateBeEmpty>
+          <Functions />
+          <ReturnVariable>result</ReturnVariable>
+          <PythonMethodName>run</PythonMethodName>
+          <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+            <IsFolder>false</IsFolder>
+            <Id>0</Id>
+            <IsNewRecord>false</IsNewRecord>
+            <Name>Template</Name>
+            <Description />
+            <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+            <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+            <IsSharedLayout>false</IsSharedLayout>
+            <LayoutBuildingOptions>
+              <RecordType>Record</RecordType>
+              <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+              <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+            </LayoutBuildingOptions>
+            <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+            <Fields />
+            <Children />
+            <Referenced />
+            <ValidationRules />
+            <IsReadOnly>false</IsReadOnly>
+          </Layout>
+        </Template>
+        <MasterPrompt />
+        <EnableMasterPrompt>false</EnableMasterPrompt>
+      </AiFlowItemDataState>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>7990f6e3-a553-44dc-aa02-58ee25bfdb04</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>7990f6e3-a553-44dc-aa02-58ee25bfdb04</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>AiUserInput</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>39</Height>
+            <Width>110</Width>
+            <X>214.03215</X>
+            <Y>220.74222</Y>
+            <IsExpanded>false</IsExpanded>
+            <ActualExpandedHeight>0</ActualExpandedHeight>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>InputMessage</Name>
+      </ActionProperties>
+      <AiFlowItemDataUserInput>
+        <Name>InputMessage</Name>
+        <IsShared>false</IsShared>
+        <ReturnVariable>result</ReturnVariable>
+        <StateLayout IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>InputMessage</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields>
+            <RecordField DataType="String" Index="0" Name="Message">
+              <AggregateFunction>Last</AggregateFunction>
+              <DbProviderType>SqlServer</DbProviderType>
+              <UniqueId>d062a605-3678-45c2-b326-e880bfff6220</UniqueId>
+              <CoreDbType>NVarChar</CoreDbType>
+              <DbDataTypeName />
+              <DecimalLength>0</DecimalLength>
+            </RecordField>
+          </Fields>
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>true</IsReadOnly>
+        </StateLayout>
+        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>InputMessage</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields>
+            <RecordField DataType="String" Index="0" Name="Message">
+              <AggregateFunction>Last</AggregateFunction>
+              <DbProviderType>SqlServer</DbProviderType>
+              <UniqueId>d062a605-3678-45c2-b326-e880bfff6220</UniqueId>
+              <CoreDbType>NVarChar</CoreDbType>
+              <DbDataTypeName />
+              <DecimalLength>0</DecimalLength>
+            </RecordField>
+          </Fields>
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>true</IsReadOnly>
+        </Layout>
+      </AiFlowItemDataUserInput>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>b79aa9b0-d15b-4cc0-9d1e-b0ab257532a5</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>b79aa9b0-d15b-4cc0-9d1e-b0ab257532a5</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>AiLlmCall</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>39</Height>
+            <Width>110</Width>
+            <X>930.5759</X>
+            <Y>256.49197</Y>
+            <IsExpanded>false</IsExpanded>
+            <ActualExpandedHeight>0</ActualExpandedHeight>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>LlmCall</Name>
+      </ActionProperties>
+      <AiFlowItemDataLlmCall>
+        <Name>LlmCall</Name>
+        <IsShared>false</IsShared>
+        <PythonCode>def build_prompt(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; TemplateParams :&#xD;
+    # Pichle Python node ka output as a 'context' uthana&#xD;
+    market_data = data_context.get_last_message_text() &#xD;
+    ticker = agent_context.State.InputMessage.Message&#xD;
+    &#xD;
+    # In dono ko template mein bhejna&#xD;
+    return TemplateParams(ticker, market_data)</PythonCode>
+        <ReturnVariable>result</ReturnVariable>
+        <StateLayout IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>LlmCall</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields>
+            <RecordField DataType="String" Index="0" Name="LlmName">
+              <AggregateFunction>Last</AggregateFunction>
+              <DbProviderType>SqlServer</DbProviderType>
+              <UniqueId>6b8c97fe-4af2-4a32-81b9-c6d1e6c24783</UniqueId>
+              <CoreDbType>Unsupported</CoreDbType>
+              <DecimalLength>0</DecimalLength>
+            </RecordField>
+            <RecordField DataType="String" Index="1" Name="Prompt">
+              <AggregateFunction>Last</AggregateFunction>
+              <DbProviderType>SqlServer</DbProviderType>
+              <UniqueId>80001d48-cd6c-40b1-a319-e80e0967c9f9</UniqueId>
+              <CoreDbType>Unsupported</CoreDbType>
+              <DecimalLength>0</DecimalLength>
+            </RecordField>
+            <RecordField DataType="String" Index="2" Name="Response">
+              <AggregateFunction>Last</AggregateFunction>
+              <DbProviderType>SqlServer</DbProviderType>
+              <UniqueId>0b460c30-a34d-40d0-ad60-d878af15a07e</UniqueId>
+              <CoreDbType>Unsupported</CoreDbType>
+              <DecimalLength>0</DecimalLength>
+            </RecordField>
+          </Fields>
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>true</IsReadOnly>
+        </StateLayout>
+        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>LlmCall</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields>
+            <RecordField DataType="String" Index="0" Name="LlmName">
+              <AggregateFunction>Last</AggregateFunction>
+              <DbProviderType>SqlServer</DbProviderType>
+              <UniqueId>6b8c97fe-4af2-4a32-81b9-c6d1e6c24783</UniqueId>
+              <CoreDbType>Unsupported</CoreDbType>
+              <DecimalLength>0</DecimalLength>
+            </RecordField>
+            <RecordField DataType="String" Index="1" Name="Prompt">
+              <AggregateFunction>Last</AggregateFunction>
+              <DbProviderType>SqlServer</DbProviderType>
+              <UniqueId>80001d48-cd6c-40b1-a319-e80e0967c9f9</UniqueId>
+              <CoreDbType>Unsupported</CoreDbType>
+              <DecimalLength>0</DecimalLength>
+            </RecordField>
+            <RecordField DataType="String" Index="2" Name="Response">
+              <AggregateFunction>Last</AggregateFunction>
+              <DbProviderType>SqlServer</DbProviderType>
+              <UniqueId>0b460c30-a34d-40d0-ad60-d878af15a07e</UniqueId>
+              <CoreDbType>Unsupported</CoreDbType>
+              <DecimalLength>0</DecimalLength>
+            </RecordField>
+          </Fields>
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>true</IsReadOnly>
+        </Layout>
+        <Template>
+          <DocumentDescription />
+          <SystemPrompt />
+          <UserPrompt />
+          <UserPromptTemplateName />
+          <TemplateType>Template</TemplateType>
+          <UseClusterMasterPrompt>false</UseClusterMasterPrompt>
+          <Llm>
+            <Id>7e1babef-4a80-4feb-90e0-d3daf353f114</Id>
+            <StreamResponseToUser>false</StreamResponseToUser>
+            <ReturnsStructuredOutput>false</ReturnsStructuredOutput>
+            <OutputLayout IsHierarchicalFile="false">
+              <IsFolder>false</IsFolder>
+              <Id>0</Id>
+              <IsNewRecord>false</IsNewRecord>
+              <Name>Template</Name>
+              <Description />
+              <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+              <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+              <IsSharedLayout>false</IsSharedLayout>
+              <LayoutBuildingOptions>
+                <RecordType>Record</RecordType>
+                <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+                <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+              </LayoutBuildingOptions>
+              <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+              <Fields />
+              <Children />
+              <Referenced />
+              <ValidationRules />
+              <IsReadOnly>false</IsReadOnly>
+            </OutputLayout>
+            <WorkingMemoryContextWindow>50</WorkingMemoryContextWindow>
+            <MaxAgentCallDepth>5</MaxAgentCallDepth>
+            <Name>GenerationLlm</Name>
+            <Parameters>
+              <Temperature>0.5</Temperature>
+              <TopP>1</TopP>
+              <MaxTokens>4096</MaxTokens>
+              <Timeout>120</Timeout>
+            </Parameters>
+            <Memory>
+              <IncludeUserContext>false</IncludeUserContext>
+              <IncludeWorkingMemory>false</IncludeWorkingMemory>
+              <IncludeParentsContext>false</IncludeParentsContext>
+              <IncludeAncestralContext>false</IncludeAncestralContext>
+              <LimitToolCallsInContext>false</LimitToolCallsInContext>
+              <ToolCallLimit>10</ToolCallLimit>
+            </Memory>
+          </Llm>
+          <FilePath />
+          <Name>Template</Name>
+          <Text>System: You are the Lead Technical Analyst at FinGuard.&#xD;
+&#xD;
+User Query: Analyze {0} using this live data: {1}&#xD;
+&#xD;
+Reasoning Steps:&#xD;
+&#xD;
+Summarize the current price and 24h change.&#xD;
+&#xD;
+Determine if the trend is Bullish or Bearish.&#xD;
+&#xD;
+Identify a potential 'Support Level' based on the low price.&#xD;
+&#xD;
+Final Output: Provide a structured report. Disclaimer: This is a simulation for PROCOM'26.</Text>
+          <CanTemplateBeEmpty>false</CanTemplateBeEmpty>
+          <Functions>
+            <string>API.CreateSharedRestApiConnection</string>
+            <string>API.ListSharedRestApiConnections</string>
+          </Functions>
+          <ErrorInfo>
+            <IsAPIException>false</IsAPIException>
+            <StatusCode>500</StatusCode>
+            <IsCPException>false</IsCPException>
+            <IsUnhandledException>false</IsUnhandledException>
+            <IsCrash>false</IsCrash>
+            <Message>Invalid parameter name 1. Position Line 2, Column 45</Message>
+            <DbConnectionTimeout>-1</DbConnectionTimeout>
+            <DbCommandTimeout>-1</DbCommandTimeout>
+          </ErrorInfo>
+          <ReturnVariable>result</ReturnVariable>
+          <PythonMethodName>run</PythonMethodName>
+          <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+            <IsFolder>false</IsFolder>
+            <Id>0</Id>
+            <IsNewRecord>false</IsNewRecord>
+            <Name>Template</Name>
+            <Description />
+            <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+            <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+            <IsSharedLayout>false</IsSharedLayout>
+            <LayoutBuildingOptions>
+              <RecordType>Record</RecordType>
+              <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+              <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+            </LayoutBuildingOptions>
+            <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+            <Fields />
+            <Children />
+            <Referenced />
+            <ValidationRules />
+            <IsReadOnly>false</IsReadOnly>
+          </Layout>
+        </Template>
+        <FilePathReferences />
+        <LlmName>GenerationLlm</LlmName>
+        <StreamResponseToUser>false</StreamResponseToUser>
+      </AiFlowItemDataLlmCall>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>e33edbd7-7643-49d9-a160-ee2260e2a097</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>e33edbd7-7643-49d9-a160-ee2260e2a097</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>AiUserOutput</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>39</Height>
+            <Width>110</Width>
+            <X>1166.0764</X>
+            <Y>236.94522</Y>
+            <IsExpanded>false</IsExpanded>
+            <ActualExpandedHeight>0</ActualExpandedHeight>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>OutputMessage</Name>
+      </ActionProperties>
+      <AiFlowItemDataUserOutput>
+        <Name>OutputMessage</Name>
+        <IsShared>false</IsShared>
+        <PythonCode>def build_message(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; TemplateParams :  &#xD;
+&#xD;
+    OutputMessage = agent_context.State.LlmCall.Response&#xD;
+&#xD;
+    return TemplateParams(OutputMessage) </PythonCode>
+        <ReturnVariable>result</ReturnVariable>
+        <StateLayout IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>OutputMessage</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields>
+            <RecordField DataType="String" Index="0" Name="Message">
+              <AggregateFunction>Last</AggregateFunction>
+              <DbProviderType>SqlServer</DbProviderType>
+              <UniqueId>f2487b77-31f2-4168-8ca6-0fd05e3ddf1e</UniqueId>
+              <CoreDbType>NVarChar</CoreDbType>
+              <DbDataTypeName />
+              <DecimalLength>0</DecimalLength>
+            </RecordField>
+          </Fields>
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>true</IsReadOnly>
+        </StateLayout>
+        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>OutputMessage</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields>
+            <RecordField DataType="String" Index="0" Name="Message">
+              <AggregateFunction>Last</AggregateFunction>
+              <DbProviderType>SqlServer</DbProviderType>
+              <UniqueId>f2487b77-31f2-4168-8ca6-0fd05e3ddf1e</UniqueId>
+              <CoreDbType>NVarChar</CoreDbType>
+              <DbDataTypeName />
+              <DecimalLength>0</DecimalLength>
+            </RecordField>
+          </Fields>
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>true</IsReadOnly>
+        </Layout>
+        <Template>
+          <DocumentDescription />
+          <SystemPrompt />
+          <UserPrompt />
+          <UserPromptTemplateName />
+          <TemplateType>Template</TemplateType>
+          <UseClusterMasterPrompt>false</UseClusterMasterPrompt>
+          <Llm>
+            <Id>a1b28fe0-461b-495f-8fd7-90851e28a76e</Id>
+            <StreamResponseToUser>false</StreamResponseToUser>
+            <ReturnsStructuredOutput>false</ReturnsStructuredOutput>
+            <OutputLayout IsHierarchicalFile="false">
+              <IsFolder>false</IsFolder>
+              <Id>0</Id>
+              <IsNewRecord>false</IsNewRecord>
+              <Name>Template</Name>
+              <Description />
+              <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+              <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+              <IsSharedLayout>false</IsSharedLayout>
+              <LayoutBuildingOptions>
+                <RecordType>Record</RecordType>
+                <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+                <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+              </LayoutBuildingOptions>
+              <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+              <Fields />
+              <Children />
+              <Referenced />
+              <ValidationRules />
+              <IsReadOnly>false</IsReadOnly>
+            </OutputLayout>
+            <WorkingMemoryContextWindow>50</WorkingMemoryContextWindow>
+            <MaxAgentCallDepth>5</MaxAgentCallDepth>
+            <Name>CompletionLlm</Name>
+            <Parameters>
+              <Temperature>0.5</Temperature>
+              <TopP>1</TopP>
+              <MaxTokens>4096</MaxTokens>
+              <Timeout>120</Timeout>
+            </Parameters>
+            <Memory>
+              <IncludeUserContext>false</IncludeUserContext>
+              <IncludeWorkingMemory>false</IncludeWorkingMemory>
+              <IncludeParentsContext>false</IncludeParentsContext>
+              <IncludeAncestralContext>false</IncludeAncestralContext>
+              <LimitToolCallsInContext>false</LimitToolCallsInContext>
+              <ToolCallLimit>10</ToolCallLimit>
+            </Memory>
+          </Llm>
+          <FilePath />
+          <Name>Template</Name>
+          <Text>Agent Output: &#xD;
+&#xD;
+{OutputMessage} </Text>
+          <CanTemplateBeEmpty>false</CanTemplateBeEmpty>
+          <Functions />
+          <ReturnVariable>result</ReturnVariable>
+          <PythonMethodName>run</PythonMethodName>
+          <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+            <IsFolder>false</IsFolder>
+            <Id>0</Id>
+            <IsNewRecord>false</IsNewRecord>
+            <Name>Template</Name>
+            <Description />
+            <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+            <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+            <IsSharedLayout>false</IsSharedLayout>
+            <LayoutBuildingOptions>
+              <RecordType>Record</RecordType>
+              <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+              <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+            </LayoutBuildingOptions>
+            <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+            <Fields />
+            <Children />
+            <Referenced />
+            <ValidationRules />
+            <IsReadOnly>false</IsReadOnly>
+          </Layout>
+        </Template>
+      </AiFlowItemDataUserOutput>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>4fa0aeaa-55f4-46f0-b24b-15867b9af233</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>4fa0aeaa-55f4-46f0-b24b-15867b9af233</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>AiCondition</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>39</Height>
+            <Width>240</Width>
+            <X>346.45312</X>
+            <Y>234.74678</Y>
+            <IsExpanded>true</IsExpanded>
+            <ActualExpandedHeight>0</ActualExpandedHeight>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>Condition</Name>
+      </ActionProperties>
+      <AiFlowItemDataCondition>
+        <Name>Condition</Name>
+        <IsShared>false</IsShared>
+        <PythonCode>def run(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; str : 
+    return ""</PythonCode>
+        <ReturnVariable>result</ReturnVariable>
+        <StateLayout IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Condition</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>false</IsReadOnly>
+        </StateLayout>
+        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Condition</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>false</IsReadOnly>
+        </Layout>
+        <Conditions>
+          <AiConditionExpression>
+            <Name>ticker checking</Name>
+            <IsElse>false</IsElse>
+            <PythonCode>def Condition_1(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; bool :&#xD;
+    # Method 1: Direct property access (Most likely to work in Atomis)&#xD;
+    try:&#xD;
+        user_input = agent_context.State.InputMessage.Message.strip().upper()&#xD;
+    except:&#xD;
+        # Method 2: Fallback to Variable access if dictionary fails&#xD;
+        user_input = agent_context.State.InputMessage.Message.strip().upper()&#xD;
+    &#xD;
+    valid_tickers = ["AAPL", "NVDA", "TSLA", "MSFT", "GOOGL", "AMZN", "META"]&#xD;
+    &#xD;
+    if user_input in valid_tickers:&#xD;
+        return True&#xD;
+        &#xD;
+    return False</PythonCode>
+            <CondtionMethodName>Condition 1</CondtionMethodName>
+            <ReturnVariable />
+          </AiConditionExpression>
+        </Conditions>
+        <OutgoingLinks>
+          <string>ticker checking</string>
+        </OutgoingLinks>
+      </AiFlowItemDataCondition>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>8af0f4fe-51c4-444f-83d4-115feb2bdea8</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>8af0f4fe-51c4-444f-83d4-115feb2bdea8</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>AiPythonCode</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>39</Height>
+            <Width>110</Width>
+            <X>727.6145</X>
+            <Y>294.64478</Y>
+            <IsExpanded>false</IsExpanded>
+            <ActualExpandedHeight>0</ActualExpandedHeight>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>PythonCode</Name>
+      </ActionProperties>
+      <AiFlowItemDataPythonCode>
+        <Name>PythonCode</Name>
+        <IsShared>false</IsShared>
+        <PythonCode>import requests&#xD;
+&#xD;
+def run(agent_context : AiAgentContext, data_context : AiDataContext):&#xD;
+    ticker = agent_context.State.InputMessage.Message&#xD;
+    api_key = "LEMH7LRPFSQ9SNX3"&#xD;
+    url = f"https://www.alphavantage.co/query?function=GLOBAL_QUOTE&amp;symbol={ticker}&amp;apikey={api_key}"&#xD;
+    &#xD;
+    try:&#xD;
+        response = requests.get(url, timeout=5)&#xD;
+        data = response.json()&#xD;
+        # Hum pura data return kar rahe hain jo LLM ke paas jayega&#xD;
+        return str(data) &#xD;
+    except Exception as e:&#xD;
+        return f"Error fetching data: {str(e)}"</PythonCode>
+        <ReturnVariable>result</ReturnVariable>
+        <StateLayout IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>PythonCode</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>false</IsReadOnly>
+        </StateLayout>
+        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>PythonCode</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>false</IsReadOnly>
+        </Layout>
+      </AiFlowItemDataPythonCode>
+    </FlowDocumentItemAction>
+  </Actions>
+  <Links>
+    <FlowDocumentItemLink>
+      <UniqueId>4678a247-a094-4b90-8d9d-95c2bc4964e3</UniqueId>
+      <Start>Start</Start>
+      <End>InputMessage</End>
+      <LinkType>Normal</LinkType>
+    </FlowDocumentItemLink>
+    <FlowDocumentItemLink>
+      <UniqueId>068de7ef-a007-4f95-9c80-9b2eec0b245c</UniqueId>
+      <Start>LlmCall</Start>
+      <End>OutputMessage</End>
+      <LinkType>Normal</LinkType>
+    </FlowDocumentItemLink>
+    <FlowDocumentItemLink>
+      <UniqueId>2537b68d-38e1-4400-a557-5314f3d4f4d2</UniqueId>
+      <Start>OutputMessage</Start>
+      <End>InputMessage</End>
+      <LinkType>Normal</LinkType>
+    </FlowDocumentItemLink>
+    <FlowDocumentItemLink>
+      <UniqueId>f3b09f89-0eb4-4bbc-adff-89f62491af13</UniqueId>
+      <Start>InputMessage</Start>
+      <End>Condition</End>
+      <IncomingLink />
+      <LinkType>Normal</LinkType>
+    </FlowDocumentItemLink>
+    <FlowDocumentItemLink>
+      <UniqueId>49b54c16-8319-4b80-a967-2d01f4b3d502</UniqueId>
+      <Start>Condition</Start>
+      <End>InputMessage</End>
+      <Condition>Default</Condition>
+      <LinkType>Normal</LinkType>
+    </FlowDocumentItemLink>
+    <FlowDocumentItemLink>
+      <UniqueId>b268cbf0-709c-4f21-a22f-52cfac7d354e</UniqueId>
+      <Start>Condition</Start>
+      <End>PythonCode</End>
+      <Condition>ticker checking</Condition>
+      <LinkType>Normal</LinkType>
+    </FlowDocumentItemLink>
+    <FlowDocumentItemLink>
+      <UniqueId>a31b40bb-8a34-46c0-ba6b-a72f22fcb6dd</UniqueId>
+      <Start>PythonCode</Start>
+      <End>LlmCall</End>
+      <LinkType>Normal</LinkType>
+    </FlowDocumentItemLink>
+  </Links>
+  <Maps />
+  <Relationships />
+  <DocumentDescription>&lt;Description&gt;</DocumentDescription>
+</AiFlowDocument>

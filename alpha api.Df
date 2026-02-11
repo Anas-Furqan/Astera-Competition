@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataflowDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ProductVersion="12.1.0.744">
+  <IsFolder>false</IsFolder>
+  <Id>0</Id>
+  <IsNewRecord>false</IsNewRecord>
+  <Description />
+  <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+  <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+  <Views />
+  <AutoLayoutOnNextLoad>false</AutoLayoutOnNextLoad>
+  <ExplicitAnchors />
+  <Actions>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>a810a502-164b-4926-aa56-60aa305b8358</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>a810a502-164b-4926-aa56-60aa305b8358</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>OpenApiClient</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>200</Height>
+            <Width>200</Width>
+            <X>66.706665</X>
+            <Y>-70.666664</Y>
+            <IsExpanded>false</IsExpanded>
+            <ActualExpandedHeight>0</ActualExpandedHeight>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>Client</Name>
+      </ActionProperties>
+      <DataflowItemDataRestOpenApi>
+        <Name>Client</Name>
+        <IsShared>false</IsShared>
+        <ParameterXml>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;DataObject Version="2" Name="Client" /&gt;</ParameterXml>
+        <AutoLog>false</AutoLog>
+        <ISupportUniqueHeaders>true</ISupportUniqueHeaders>
+        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Client</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields>
+            <RecordField DataType="String" DefaultValue="AAPL" Index="0" Name="symbol">
+              <AggregateFunction>Last</AggregateFunction>
+              <DbProviderType>SqlServer</DbProviderType>
+              <UniqueId>b98abe7a-72dc-43d3-a280-142e9e068baf</UniqueId>
+              <IsRequired>false</IsRequired>
+              <ParameterKey>symbol</ParameterKey>
+              <IsSharedConnectionParameter>true</IsSharedConnectionParameter>
+              <InheritedParameter>Yes</InheritedParameter>
+              <OverrideInheritedParameter>true</OverrideInheritedParameter>
+              <CoreDbType>Unsupported</CoreDbType>
+              <DecimalLength>0</DecimalLength>
+            </RecordField>
+          </Fields>
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>false</IsReadOnly>
+        </Layout>
+        <_TimeoutMilliseconds>5000</_TimeoutMilliseconds>
+        <Password />
+        <UserId />
+        <AuthInfo>
+          <Key>apikey</Key>
+          <ApiKeyValue>
+            <E>0112D3A9BCA0546CB49A4B4AE17E57A5C778F126D0BE5D4DB979571C1D9D60F9</E>
+          </ApiKeyValue>
+          <ApiKeyLocation>Query</ApiKeyLocation>
+          <Password />
+          <oAuthFlowObjectType>Implicit</oAuthFlowObjectType>
+          <ClientSecret />
+          <TokenSecret />
+          <HFToken />
+          <IncludeSSLCertificate>false</IncludeSSLCertificate>
+          <IgnoreCertificateErrors>false</IgnoreCertificateErrors>
+          <ApiSecuritySchemeType>ApiKey</ApiSecuritySchemeType>
+          <ProvideTokenManually>false</ProvideTokenManually>
+          <AwsSignature>
+            <AccessKey />
+            <SecretKey />
+            <ExecutionRole />
+            <AuthType>Default</AuthType>
+          </AwsSignature>
+        </AuthInfo>
+        <Parameters IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Client</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields>
+            <RecordField DataType="String" DefaultValue="AAPL" Index="0" Name="symbol">
+              <AggregateFunction>Last</AggregateFunction>
+              <DbProviderType>SqlServer</DbProviderType>
+              <UniqueId>b98abe7a-72dc-43d3-a280-142e9e068baf</UniqueId>
+              <IsRequired>false</IsRequired>
+              <ParameterKey>symbol</ParameterKey>
+              <IsSharedConnectionParameter>true</IsSharedConnectionParameter>
+              <InheritedParameter>Yes</InheritedParameter>
+              <OverrideInheritedParameter>true</OverrideInheritedParameter>
+              <CoreDbType>Unsupported</CoreDbType>
+              <DecimalLength>0</DecimalLength>
+            </RecordField>
+          </Fields>
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>false</IsReadOnly>
+        </Parameters>
+        <AuthenticationMethod>APIKey</AuthenticationMethod>
+        <ResponseLayoutOptions>
+          <IncludeStatusCode>true</IncludeStatusCode>
+          <IncludeContentAsString>true</IncludeContentAsString>
+          <IncludeRawBytes>false</IncludeRawBytes>
+          <IncludeResponseHeaders>true</IncludeResponseHeaders>
+          <IncludeResponseUrl>true</IncludeResponseUrl>
+          <IncludeContentLength>false</IncludeContentLength>
+          <IncludeHttpStatusDescription>true</IncludeHttpStatusDescription>
+          <IncludeContentType>true</IncludeContentType>
+          <IncludeContentEncoding>false</IncludeContentEncoding>
+          <SaveDownloadedFilesAsUnique>false</SaveDownloadedFilesAsUnique>
+          <IncludeRawRequest>false</IncludeRawRequest>
+        </ResponseLayoutOptions>
+        <InputFormat>Xml</InputFormat>
+        <RestMethod>Get</RestMethod>
+        <OutputFormat>Xml</OutputFormat>
+        <IncludeMD5>false</IncludeMD5>
+        <RequestFormat>None</RequestFormat>
+        <BaseUrl>https://www.alphavantage.co/query</BaseUrl>
+        <SkipRoot>false</SkipRoot>
+        <Resource>query</Resource>
+        <HeaderNames />
+        <TimeoutMilliseconds>5000</TimeoutMilliseconds>
+        <NumberOfRetries>0</NumberOfRetries>
+        <DelayBetweenCalls>100</DelayBetweenCalls>
+        <DelayBetweenRetries>500</DelayBetweenRetries>
+        <InputLayoutXsdPath>
+          <Path />
+          <UncPath />
+        </InputLayoutXsdPath>
+        <OutputLayoutXsdPath>
+          <Path />
+          <UncPath />
+        </OutputLayoutXsdPath>
+        <InputLayoutBuildingMethod>UseSampleText</InputLayoutBuildingMethod>
+        <OutputLayoutBuildingMethod>UseSampleText</OutputLayoutBuildingMethod>
+        <OutputLayout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Body</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced>
+            <BaseLayout xsi:type="RecordLayout" IsHierarchicalFile="false">
+              <IsFolder>false</IsFolder>
+              <Id>0</Id>
+              <IsNewRecord>false</IsNewRecord>
+              <Name>root</Name>
+              <Description />
+              <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+              <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+              <IsSharedLayout>false</IsSharedLayout>
+              <LayoutBuildingOptions>
+                <RecordType>Record</RecordType>
+                <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+                <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+              </LayoutBuildingOptions>
+              <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+              <Fields />
+              <Children />
+              <Referenced />
+              <ValidationRules />
+              <IsReadOnly>false</IsReadOnly>
+            </BaseLayout>
+          </Referenced>
+          <ValidationRules />
+          <IsReadOnly>false</IsReadOnly>
+        </OutputLayout>
+        <DisplayDiagnosticsInException>false</DisplayDiagnosticsInException>
+        <RefreshTokenIfUnauthorized>true</RefreshTokenIfUnauthorized>
+        <IgnoreErrorStatusCode>false</IgnoreErrorStatusCode>
+        <ContinueOnRetryFailure>false</ContinueOnRetryFailure>
+        <UseParallelism>false</UseParallelism>
+        <DegreeOfParallelism>1</DegreeOfParallelism>
+        <PaginationFields>
+          <TotalPagesToRequest>1</TotalPagesToRequest>
+          <ReadTillEnd>false</ReadTillEnd>
+          <Limit>1</Limit>
+          <FieldLocation>Body</FieldLocation>
+        </PaginationFields>
+        <ResponseHeaders />
+        <AddClientCertificates>false</AddClientCertificates>
+        <IsReadOnlyMode>false</IsReadOnlyMode>
+        <KeepConnectionAlive>true</KeepConnectionAlive>
+        <InputContentType>application/json</InputContentType>
+        <InputRawContent />
+        <InputRawContentType>text/plain</InputRawContentType>
+        <OutputContentType>application/json</OutputContentType>
+        <RestParameters>
+          <RestParameterProperties>
+            <Name>symbol</Name>
+            <ParameterType>Query</ParameterType>
+            <PaginationFieldType>None</PaginationFieldType>
+            <DataType>String</DataType>
+            <IsRequired>false</IsRequired>
+            <Value>AAPL</Value>
+            <IsMapAllowed>true</IsMapAllowed>
+            <IsSharedConnectionParameter>true</IsSharedConnectionParameter>
+            <OverrideInheritedParameter>true</OverrideInheritedParameter>
+            <SendValueAsPlainText>false</SendValueAsPlainText>
+            <ParameterKey>symbol</ParameterKey>
+            <IsResourceParameter>false</IsResourceParameter>
+          </RestParameterProperties>
+        </RestParameters>
+        <RestApiResponses>
+          <RestResponse>
+            <HttpCode>200</HttpCode>
+            <ResponseFormat>None</ResponseFormat>
+            <ResponseMeta>
+              <IsCaseSensitive>true</IsCaseSensitive>
+              <Children />
+              <Elements />
+              <Referenced>
+                <MetaBaseOfMetaElement xsi:type="MetaObject">
+                  <IsCaseSensitive>true</IsCaseSensitive>
+                  <Children />
+                  <Elements />
+                  <Referenced />
+                  <Name>root</Name>
+                  <InboundPortVisible>true</InboundPortVisible>
+                  <OutboundPortVisible>true</OutboundPortVisible>
+                  <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                  <IsEmbeddedMember>false</IsEmbeddedMember>
+                  <Indicator>None</Indicator>
+                </MetaBaseOfMetaElement>
+              </Referenced>
+              <Name>Body</Name>
+              <InboundPortVisible>true</InboundPortVisible>
+              <OutboundPortVisible>true</OutboundPortVisible>
+              <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+              <IsEmbeddedMember>false</IsEmbeddedMember>
+              <Indicator>None</Indicator>
+            </ResponseMeta>
+          </RestResponse>
+        </RestApiResponses>
+        <ExcludeNullValueAttributes>false</ExcludeNullValueAttributes>
+        <XmlNodes />
+        <DoNotProcessRecordsWithErrors>false</DoNotProcessRecordsWithErrors>
+        <ClearIncomingRecordErrors>false</ClearIncomingRecordErrors>
+        <DoNotOverwriteDefaultsWithNullValues>false</DoNotOverwriteDefaultsWithNullValues>
+        <EnableEtags>false</EnableEtags>
+        <IsRetrieving>true</IsRetrieving>
+        <IsUpdating>false</IsUpdating>
+        <FollowRedirects>false</FollowRedirects>
+        <CanRedirectWithAuthInfo>false</CanRedirectWithAuthInfo>
+        <RedirectLimit>1</RedirectLimit>
+        <UseRandomInputData>false</UseRandomInputData>
+        <SharingConnection>true</SharingConnection>
+        <SharedConnectionName>APIConnection</SharedConnectionName>
+        <EnableLogging>false</EnableLogging>
+        <GraphQLQuery />
+      </DataflowItemDataRestOpenApi>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>2dadf5d7-51d2-4b3e-84e3-8f7d4c16cf8b</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>2dadf5d7-51d2-4b3e-84e3-8f7d4c16cf8b</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>SharedRestApiConnection</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>200</Height>
+            <Width>200</Width>
+            <X>316.04</X>
+            <Y>-23.99999</Y>
+            <IsExpanded>false</IsExpanded>
+            <ActualExpandedHeight>0</ActualExpandedHeight>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>APIConnection</Name>
+      </ActionProperties>
+      <DataflowItemDataSharedRestApiConnection>
+        <Name>APIConnection</Name>
+        <IsShared>false</IsShared>
+        <AutoLog>false</AutoLog>
+        <ApiConnectInfo>
+          <BaseUrl>https://www.alphavantage.co/query</BaseUrl>
+          <Timeout>5000</Timeout>
+          <RestApiSecurities />
+          <AuthenticationInfo>
+            <Key>apikey</Key>
+            <ApiKeyValue>
+              <E>0112D3A9BCA0546CB49A4B4AE17E57A5C778F126D0BE5D4DB979571C1D9D60F9</E>
+            </ApiKeyValue>
+            <ApiKeyLocation>Query</ApiKeyLocation>
+            <Password />
+            <oAuthFlowObjectType>Implicit</oAuthFlowObjectType>
+            <ClientSecret />
+            <TokenSecret />
+            <HFToken />
+            <IncludeSSLCertificate>false</IncludeSSLCertificate>
+            <IgnoreCertificateErrors>false</IgnoreCertificateErrors>
+            <ApiSecuritySchemeType>ApiKey</ApiSecuritySchemeType>
+            <ProvideTokenManually>false</ProvideTokenManually>
+            <AwsSignature>
+              <AccessKey />
+              <SecretKey />
+              <ExecutionRole />
+              <AuthType>Default</AuthType>
+            </AwsSignature>
+          </AuthenticationInfo>
+          <Parameters>
+            <RestParameterProperties>
+              <Name>symbol</Name>
+              <ParameterType>Query</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <Value>AAPL</Value>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <SendValueAsPlainText>false</SendValueAsPlainText>
+              <IsResourceParameter>false</IsResourceParameter>
+            </RestParameterProperties>
+          </Parameters>
+          <IsCustomApiSet>false</IsCustomApiSet>
+          <AddClientCertificates>false</AddClientCertificates>
+          <Name>APIConnection</Name>
+          <EnableLogging>false</EnableLogging>
+        </ApiConnectInfo>
+        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>APIConnection</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields>
+            <RecordField DataType="String" DefaultValue="AAPL" Index="0" Name="symbol">
+              <AggregateFunction>Last</AggregateFunction>
+              <DbProviderType>SqlServer</DbProviderType>
+              <UniqueId>34def0d2-dd7b-440f-96b6-17f360294d8a</UniqueId>
+              <CoreDbType>Unsupported</CoreDbType>
+              <DecimalLength>0</DecimalLength>
+            </RecordField>
+          </Fields>
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>false</IsReadOnly>
+        </Layout>
+      </DataflowItemDataSharedRestApiConnection>
+    </FlowDocumentItemAction>
+  </Actions>
+  <Links />
+  <Maps />
+  <Relationships />
+  <VisualInfo>
+    <UniqueId>be993bad-30ee-40a4-8a04-6d39e7acaea5</UniqueId>
+    <Actions />
+    <DocumentBounds>
+      <Item1>66.7066650390625</Item1>
+      <Item2>-70.66666412353516</Item2>
+      <Item3>449.3333435058594</Item3>
+      <Item4>85.66667938232422</Item4>
+    </DocumentBounds>
+    <DocumentPosition>
+      <Item1>0</Item1>
+      <Item2>0</Item2>
+    </DocumentPosition>
+    <DocumentScale>1</DocumentScale>
+    <IsSelected>false</IsSelected>
+    <MappingMode>Data</MappingMode>
+    <UseMessages>false</UseMessages>
+    <UseOrthogonalLinks>false</UseOrthogonalLinks>
+  </VisualInfo>
+  <DocumentDescription>&lt;Description&gt;</DocumentDescription>
+  <IsReadyForPreview>false</IsReadyForPreview>
+</DataflowDocument>
