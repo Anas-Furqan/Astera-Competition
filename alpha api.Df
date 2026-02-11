@@ -3,6 +3,7 @@
   <IsFolder>false</IsFolder>
   <Id>0</Id>
   <IsNewRecord>false</IsNewRecord>
+  <Name>C:\Users\THIS PC\Documents\GitHub\Astera-Competition\alpha api.Df</Name>
   <Description />
   <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
   <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
@@ -27,9 +28,9 @@
           <NormalBounds>
             <Height>200</Height>
             <Width>200</Width>
-            <X>66.706665</X>
-            <Y>-70.666664</Y>
-            <IsExpanded>false</IsExpanded>
+            <X>66.04</X>
+            <Y>-25.333334</Y>
+            <IsExpanded>true</IsExpanded>
             <ActualExpandedHeight>0</ActualExpandedHeight>
             <IsSorted>false</IsSorted>
           </NormalBounds>
@@ -65,9 +66,9 @@
             <RecordField DataType="String" DefaultValue="AAPL" Index="0" Name="symbol">
               <AggregateFunction>Last</AggregateFunction>
               <DbProviderType>SqlServer</DbProviderType>
-              <UniqueId>b98abe7a-72dc-43d3-a280-142e9e068baf</UniqueId>
+              <UniqueId>18ac3f86-8013-4a0e-a2b7-9a5a3a54eab0</UniqueId>
               <IsRequired>false</IsRequired>
-              <ParameterKey>symbol</ParameterKey>
+              <ParameterKey>{{agent_context.State.InputMessage.Message}}</ParameterKey>
               <IsSharedConnectionParameter>true</IsSharedConnectionParameter>
               <InheritedParameter>Yes</InheritedParameter>
               <OverrideInheritedParameter>true</OverrideInheritedParameter>
@@ -124,9 +125,9 @@
             <RecordField DataType="String" DefaultValue="AAPL" Index="0" Name="symbol">
               <AggregateFunction>Last</AggregateFunction>
               <DbProviderType>SqlServer</DbProviderType>
-              <UniqueId>b98abe7a-72dc-43d3-a280-142e9e068baf</UniqueId>
+              <UniqueId>18ac3f86-8013-4a0e-a2b7-9a5a3a54eab0</UniqueId>
               <IsRequired>false</IsRequired>
-              <ParameterKey>symbol</ParameterKey>
+              <ParameterKey>{{agent_context.State.InputMessage.Message}}</ParameterKey>
               <IsSharedConnectionParameter>true</IsSharedConnectionParameter>
               <InheritedParameter>Yes</InheritedParameter>
               <OverrideInheritedParameter>true</OverrideInheritedParameter>
@@ -251,7 +252,7 @@
             <IsSharedConnectionParameter>true</IsSharedConnectionParameter>
             <OverrideInheritedParameter>true</OverrideInheritedParameter>
             <SendValueAsPlainText>false</SendValueAsPlainText>
-            <ParameterKey>symbol</ParameterKey>
+            <ParameterKey>{{agent_context.State.InputMessage.Message}}</ParameterKey>
             <IsResourceParameter>false</IsResourceParameter>
           </RestParameterProperties>
         </RestParameters>
@@ -321,9 +322,9 @@
           <NormalBounds>
             <Height>200</Height>
             <Width>200</Width>
-            <X>316.04</X>
+            <X>313.37332</X>
             <Y>-23.99999</Y>
-            <IsExpanded>false</IsExpanded>
+            <IsExpanded>true</IsExpanded>
             <ActualExpandedHeight>0</ActualExpandedHeight>
             <IsSorted>false</IsSorted>
           </NormalBounds>
@@ -420,13 +421,13 @@
   <Maps />
   <Relationships />
   <VisualInfo>
-    <UniqueId>be993bad-30ee-40a4-8a04-6d39e7acaea5</UniqueId>
+    <UniqueId>43e97d5d-9736-46a4-804e-08761aba70da</UniqueId>
     <Actions />
     <DocumentBounds>
-      <Item1>66.7066650390625</Item1>
-      <Item2>-70.66666412353516</Item2>
-      <Item3>449.3333435058594</Item3>
-      <Item4>85.66667938232422</Item4>
+      <Item1>66.04000091552734</Item1>
+      <Item2>-25.33333396911621</Item2>
+      <Item3>447.3333435058594</Item3>
+      <Item4>201.33334350585938</Item4>
     </DocumentBounds>
     <DocumentPosition>
       <Item1>0</Item1>

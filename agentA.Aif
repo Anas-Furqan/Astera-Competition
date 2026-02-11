@@ -3,6 +3,7 @@
   <IsFolder>false</IsFolder>
   <Id>0</Id>
   <IsNewRecord>false</IsNewRecord>
+  <Name>C:\Users\THIS PC\Documents\GitHub\Astera-Competition\agentA.Aif</Name>
   <Description />
   <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
   <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
@@ -367,8 +368,8 @@ Instructions: Please enter a valid Stock Ticker Symbol (e.g., AAPL) to begin the
           <NormalBounds>
             <Height>39</Height>
             <Width>110</Width>
-            <X>593.79144</X>
-            <Y>-12.936694</Y>
+            <X>1383.2623</X>
+            <Y>-154.84978</Y>
             <IsExpanded>false</IsExpanded>
             <ActualExpandedHeight>0</ActualExpandedHeight>
             <IsSorted>false</IsSorted>
@@ -752,8 +753,8 @@ Instructions: Please enter a valid Stock Ticker Symbol (e.g., AAPL) to begin the
           <NormalBounds>
             <Height>39</Height>
             <Width>110</Width>
-            <X>930.5759</X>
-            <Y>256.49197</Y>
+            <X>884.96686</X>
+            <Y>252.14824</Y>
             <IsExpanded>false</IsExpanded>
             <ActualExpandedHeight>0</ActualExpandedHeight>
             <IsSorted>false</IsSorted>
@@ -768,12 +769,23 @@ Instructions: Please enter a valid Stock Ticker Symbol (e.g., AAPL) to begin the
       <AiFlowItemDataLlmCall>
         <Name>LlmCall</Name>
         <IsShared>false</IsShared>
-        <PythonCode>def build_prompt(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; TemplateParams :&#xD;
-    # Pichle Python node ka output as a 'context' uthana&#xD;
-    market_data = data_context.get_last_message_text() &#xD;
+        <PythonCode>import requests&#xD;
+&#xD;
+def build_prompt(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; TemplateParams :&#xD;
+    # 1. User ka ticker uthao&#xD;
     ticker = agent_context.State.InputMessage.Message&#xD;
+    api_key = "LEMH7LRPFSQ9SNX3" #&#xD;
     &#xD;
-    # In dono ko template mein bhejna&#xD;
+    # 2. Yahin se API ko hit karo&#xD;
+    url = f"https://www.alphavantage.co/query?function=GLOBAL_QUOTE&amp;symbol={ticker}&amp;apikey={api_key}"&#xD;
+    &#xD;
+    try:&#xD;
+        response = requests.get(url, timeout=10)&#xD;
+        market_data = response.text # Pura JSON string utha liya&#xD;
+    except Exception as e:&#xD;
+        market_data = f"Error fetching data: {str(e)}"&#xD;
+    &#xD;
+    # 3. Dono variables ko positional arguments (ticker as {0}, data as {1}) ke taur par bhej do&#xD;
     return TemplateParams(ticker, market_data)</PythonCode>
         <ReturnVariable>result</ReturnVariable>
         <StateLayout IsHierarchicalFile="false">
@@ -914,21 +926,14 @@ Instructions: Please enter a valid Stock Ticker Symbol (e.g., AAPL) to begin the
           </Llm>
           <FilePath />
           <Name>Template</Name>
-          <Text>System: You are the Lead Technical Analyst at FinGuard.&#xD;
+          <Text>System: You are a Senior Analyst. You MUST use the provided data. Do not say you don't have access.&#xD;
 &#xD;
-User Query: Analyze {0} using this live data: {1}&#xD;
+Ticker: {ticker} Live Data from Tool: {market_raw}&#xD;
 &#xD;
-Reasoning Steps:&#xD;
-&#xD;
-Summarize the current price and 24h change.&#xD;
-&#xD;
-Determine if the trend is Bullish or Bearish.&#xD;
-&#xD;
-Identify a potential 'Support Level' based on the low price.&#xD;
-&#xD;
-Final Output: Provide a structured report. Disclaimer: This is a simulation for PROCOM'26.</Text>
+Task: Analyze the data above. If it contains "Global Quote", extract the price. If it's an error, tell the user to check the ticker.</Text>
           <CanTemplateBeEmpty>false</CanTemplateBeEmpty>
           <Functions>
+            <string>ActionTemplates.GetDataflowActionTemplatesAsync</string>
             <string>API.CreateSharedRestApiConnection</string>
             <string>API.ListSharedRestApiConnections</string>
           </Functions>
@@ -938,7 +943,9 @@ Final Output: Provide a structured report. Disclaimer: This is a simulation for 
             <IsCPException>false</IsCPException>
             <IsUnhandledException>false</IsUnhandledException>
             <IsCrash>false</IsCrash>
-            <Message>Invalid parameter name 1. Position Line 2, Column 45</Message>
+            <Message>Invalid parameter name 1. Position Line 2, Column 37</Message>
+            <ProductVersion>12.1.0.744</ProductVersion>
+            <OSVersion>Microsoft Windows NT 10.0.26100.0</OSVersion>
             <DbConnectionTimeout>-1</DbConnectionTimeout>
             <DbCommandTimeout>-1</DbCommandTimeout>
           </ErrorInfo>
@@ -1275,8 +1282,8 @@ Final Output: Provide a structured report. Disclaimer: This is a simulation for 
           <NormalBounds>
             <Height>39</Height>
             <Width>110</Width>
-            <X>727.6145</X>
-            <Y>294.64478</Y>
+            <X>628.79486</X>
+            <Y>-54.93868</Y>
             <IsExpanded>false</IsExpanded>
             <ActualExpandedHeight>0</ActualExpandedHeight>
             <IsSorted>false</IsSorted>
@@ -1385,14 +1392,14 @@ def run(agent_context : AiAgentContext, data_context : AiDataContext):&#xD;
       <LinkType>Normal</LinkType>
     </FlowDocumentItemLink>
     <FlowDocumentItemLink>
-      <UniqueId>b268cbf0-709c-4f21-a22f-52cfac7d354e</UniqueId>
+      <UniqueId>8de717a1-419c-4eca-8924-dd7dc5e74fbb</UniqueId>
       <Start>Condition</Start>
       <End>PythonCode</End>
       <Condition>ticker checking</Condition>
       <LinkType>Normal</LinkType>
     </FlowDocumentItemLink>
     <FlowDocumentItemLink>
-      <UniqueId>a31b40bb-8a34-46c0-ba6b-a72f22fcb6dd</UniqueId>
+      <UniqueId>6da61680-34f1-4a18-bb4b-c3e5f656d1ac</UniqueId>
       <Start>PythonCode</Start>
       <End>LlmCall</End>
       <LinkType>Normal</LinkType>
@@ -1400,5 +1407,24 @@ def run(agent_context : AiAgentContext, data_context : AiDataContext):&#xD;
   </Links>
   <Maps />
   <Relationships />
+  <VisualInfo>
+    <UniqueId>cc7d3ee8-6f12-4bfd-9838-376ab29ed4a1</UniqueId>
+    <Actions />
+    <DocumentBounds>
+      <Item1>10</Item1>
+      <Item2>-154.8497772216797</Item2>
+      <Item3>1483.2623291015625</Item3>
+      <Item4>599.5965576171875</Item4>
+    </DocumentBounds>
+    <DocumentPosition>
+      <Item1>0</Item1>
+      <Item2>0</Item2>
+    </DocumentPosition>
+    <DocumentScale>0.61391324</DocumentScale>
+    <IsSelected>false</IsSelected>
+    <MappingMode>Data</MappingMode>
+    <UseMessages>false</UseMessages>
+    <UseOrthogonalLinks>false</UseOrthogonalLinks>
+  </VisualInfo>
   <DocumentDescription>&lt;Description&gt;</DocumentDescription>
 </AiFlowDocument>
