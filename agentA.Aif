@@ -926,11 +926,25 @@ def build_prompt(agent_context : AiAgentContext, data_context : AiDataContext) -
           </Llm>
           <FilePath />
           <Name>Template</Name>
-          <Text>System: You are a Senior Analyst. You MUST use the provided data. Do not say you don't have access.&#xD;
+          <Text>System: You are a Senior Quantitative Analyst at a top-tier investment bank. You are known for precise, data-driven insights. You MUST use the provided raw JSON data to construct a report. Do not mention that you are an AI or lack tools.&#xD;
 &#xD;
-Ticker: {ticker} Live Data from Tool: {market_raw}&#xD;
+Ticker: {ticker}&#xD;
 &#xD;
-Task: Analyze the data above. If it contains "Global Quote", extract the price. If it's an error, tell the user to check the ticker.</Text>
+Market Context (JSON): {market_data}&#xD;
+&#xD;
+Task: Analyze the provided chart data and generate a professional "Executive Summary".&#xD;
+&#xD;
+Instructions:&#xD;
+&#xD;
+Data Table: Create a neat Markdown table for: Current Price, Previous Close, Day High/Low, and 52-Week High/Low.&#xD;
+&#xD;
+Technical Stance: Compare the 'Current Price' with 'Previous Close'. If Current &gt; Previous, the trend is Bullish 🟢; if lower, it is Bearish 🔴.&#xD;
+&#xD;
+Range Analysis: Tell the user where the current price sits within the 52-week range (e.g., "Trading at 95% of its yearly high").&#xD;
+&#xD;
+Verdict: Provide a one-sentence final recommendation (Buy/Hold/Sell) based strictly on this price action.&#xD;
+&#xD;
+Constraint: If the data is empty or invalid, respond with: "Critical Error: Ticker not recognized or API limit reached."</Text>
           <CanTemplateBeEmpty>false</CanTemplateBeEmpty>
           <Functions>
             <string>ActionTemplates.GetDataflowActionTemplatesAsync</string>
@@ -943,9 +957,7 @@ Task: Analyze the data above. If it contains "Global Quote", extract the price. 
             <IsCPException>false</IsCPException>
             <IsUnhandledException>false</IsUnhandledException>
             <IsCrash>false</IsCrash>
-            <Message>Invalid parameter name 1. Position Line 2, Column 37</Message>
-            <ProductVersion>12.1.0.744</ProductVersion>
-            <OSVersion>Microsoft Windows NT 10.0.26100.0</OSVersion>
+            <Message>Invalid parameter name 1. Position Line 4, Column 24</Message>
             <DbConnectionTimeout>-1</DbConnectionTimeout>
             <DbCommandTimeout>-1</DbCommandTimeout>
           </ErrorInfo>
@@ -1408,12 +1420,12 @@ def run(agent_context : AiAgentContext, data_context : AiDataContext):&#xD;
   <Maps />
   <Relationships />
   <VisualInfo>
-    <UniqueId>4fef1094-74be-46ed-aaf7-7dda42cb8cf7</UniqueId>
+    <UniqueId>86c8292a-7ee1-48ff-9dcd-68b64eecb2b7</UniqueId>
     <Actions />
     <DocumentBounds>
-      <Item1>-29.54365348815918</Item1>
+      <Item1>-34.54365539550781</Item1>
       <Item2>-159.8497772216797</Item2>
-      <Item3>1517.8060302734375</Item3>
+      <Item3>1522.8060302734375</Item3>
       <Item4>599.5965576171875</Item4>
     </DocumentBounds>
     <DocumentPosition>
