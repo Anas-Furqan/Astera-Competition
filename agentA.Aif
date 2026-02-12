@@ -27,9 +27,9 @@
         <NodeBounds>
           <NormalBounds>
             <Height>39</Height>
-            <Width>110</Width>
-            <X>780</X>
-            <Y>185</Y>
+            <Width>160</Width>
+            <X>-29.543653</X>
+            <Y>197.5994</Y>
             <IsExpanded>false</IsExpanded>
             <ActualExpandedHeight>0</ActualExpandedHeight>
             <IsSorted>false</IsSorted>
@@ -205,9 +205,9 @@ Instructions: Please enter a valid Stock Ticker Symbol (e.g., AAPL) to begin the
         <NodeBounds>
           <NormalBounds>
             <Height>39</Height>
-            <Width>110</Width>
-            <X>780</X>
-            <Y>185</Y>
+            <Width>160</Width>
+            <X>1098.0746</X>
+            <Y>46.451324</Y>
             <IsExpanded>false</IsExpanded>
             <ActualExpandedHeight>0</ActualExpandedHeight>
             <IsSorted>false</IsSorted>
@@ -772,20 +772,20 @@ Instructions: Please enter a valid Stock Ticker Symbol (e.g., AAPL) to begin the
         <PythonCode>import requests&#xD;
 &#xD;
 def build_prompt(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; TemplateParams :&#xD;
-    # 1. User ka ticker uthao&#xD;
     ticker = agent_context.State.InputMessage.Message&#xD;
-    api_key = "LEMH7LRPFSQ9SNX3" #&#xD;
     &#xD;
-    # 2. Yahin se API ko hit karo&#xD;
-    url = f"https://www.alphavantage.co/query?function=GLOBAL_QUOTE&amp;symbol={ticker}&amp;apikey={api_key}"&#xD;
+    # Public endpoint jo Yahoo Finance ka data deta hai (No Key Required for basic)&#xD;
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"&#xD;
     &#xD;
+    headers = {'User-Agent': 'Mozilla/5.0'} # Yahoo blocks empty agents&#xD;
+&#xD;
     try:&#xD;
-        response = requests.get(url, timeout=10)&#xD;
-        market_data = response.text # Pura JSON string utha liya&#xD;
+        response = requests.get(url, headers=headers, timeout=10)&#xD;
+        # Price aur previous close nikalne ke liye&#xD;
+        market_data = response.text &#xD;
     except Exception as e:&#xD;
-        market_data = f"Error fetching data: {str(e)}"&#xD;
+        market_data = f"Error: {str(e)}"&#xD;
     &#xD;
-    # 3. Dono variables ko positional arguments (ticker as {0}, data as {1}) ke taur par bhej do&#xD;
     return TemplateParams(ticker, market_data)</PythonCode>
         <ReturnVariable>result</ReturnVariable>
         <StateLayout IsHierarchicalFile="false">
@@ -1267,12 +1267,12 @@ Task: Analyze the data above. If it contains "Global Quote", extract the price. 
     </FlowDocumentItemAction>
     <FlowDocumentItemAction>
       <ActionProperties>
-        <UniqueId>8af0f4fe-51c4-444f-83d4-115feb2bdea8</UniqueId>
+        <UniqueId>d1d99f45-7aab-4179-8023-db5ded2889cb</UniqueId>
         <DocumentItemData>
           <SharingConnection>false</SharingConnection>
           <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
         </DocumentItemData>
-        <ActionId>8af0f4fe-51c4-444f-83d4-115feb2bdea8</ActionId>
+        <ActionId>d1d99f45-7aab-4179-8023-db5ded2889cb</ActionId>
         <SharedItemPath>
           <Path />
           <UncPath />
@@ -1280,10 +1280,10 @@ Task: Analyze the data above. If it contains "Global Quote", extract the price. 
         <ActionTemplateName>AiPythonCode</ActionTemplateName>
         <NodeBounds>
           <NormalBounds>
-            <Height>39</Height>
-            <Width>110</Width>
-            <X>628.79486</X>
-            <Y>-54.93868</Y>
+            <Height>200</Height>
+            <Width>200</Width>
+            <X>618.9291</X>
+            <Y>36.76862</Y>
             <IsExpanded>false</IsExpanded>
             <ActualExpandedHeight>0</ActualExpandedHeight>
             <IsSorted>false</IsSorted>
@@ -1302,7 +1302,7 @@ Task: Analyze the data above. If it contains "Global Quote", extract the price. 
 &#xD;
 def run(agent_context : AiAgentContext, data_context : AiDataContext):&#xD;
     ticker = agent_context.State.InputMessage.Message&#xD;
-    api_key = "LEMH7LRPFSQ9SNX3"&#xD;
+    api_key = "L8Y2OBCFGJN05AH2"&#xD;
     url = f"https://www.alphavantage.co/query?function=GLOBAL_QUOTE&amp;symbol={ticker}&amp;apikey={api_key}"&#xD;
     &#xD;
     try:&#xD;
@@ -1392,14 +1392,14 @@ def run(agent_context : AiAgentContext, data_context : AiDataContext):&#xD;
       <LinkType>Normal</LinkType>
     </FlowDocumentItemLink>
     <FlowDocumentItemLink>
-      <UniqueId>8de717a1-419c-4eca-8924-dd7dc5e74fbb</UniqueId>
+      <UniqueId>163b6d2e-3d9c-42ae-a6f7-5dc3b438f694</UniqueId>
       <Start>Condition</Start>
       <End>PythonCode</End>
       <Condition>ticker checking</Condition>
       <LinkType>Normal</LinkType>
     </FlowDocumentItemLink>
     <FlowDocumentItemLink>
-      <UniqueId>6da61680-34f1-4a18-bb4b-c3e5f656d1ac</UniqueId>
+      <UniqueId>b73ce163-8cd3-43a8-9f8d-cd4291d45999</UniqueId>
       <Start>PythonCode</Start>
       <End>LlmCall</End>
       <LinkType>Normal</LinkType>
@@ -1408,19 +1408,19 @@ def run(agent_context : AiAgentContext, data_context : AiDataContext):&#xD;
   <Maps />
   <Relationships />
   <VisualInfo>
-    <UniqueId>cc7d3ee8-6f12-4bfd-9838-376ab29ed4a1</UniqueId>
+    <UniqueId>4fef1094-74be-46ed-aaf7-7dda42cb8cf7</UniqueId>
     <Actions />
     <DocumentBounds>
-      <Item1>10</Item1>
-      <Item2>-154.8497772216797</Item2>
-      <Item3>1483.2623291015625</Item3>
+      <Item1>-29.54365348815918</Item1>
+      <Item2>-159.8497772216797</Item2>
+      <Item3>1517.8060302734375</Item3>
       <Item4>599.5965576171875</Item4>
     </DocumentBounds>
     <DocumentPosition>
       <Item1>0</Item1>
       <Item2>0</Item2>
     </DocumentPosition>
-    <DocumentScale>0.61391324</DocumentScale>
+    <DocumentScale>0.67683935</DocumentScale>
     <IsSelected>false</IsSelected>
     <MappingMode>Data</MappingMode>
     <UseMessages>false</UseMessages>
