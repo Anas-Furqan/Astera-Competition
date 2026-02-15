@@ -3,7 +3,7 @@
   <IsFolder>false</IsFolder>
   <Id>0</Id>
   <IsNewRecord>false</IsNewRecord>
-  <Name>C:\Users\THIS PC\Documents\GitHub\Astera-Competition\agentA.Aif</Name>
+  <Name>C:\Users\THIS PC\Documents\GitHub\Astera-Competition\agentC.Aif</Name>
   <Description />
   <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
   <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
@@ -13,12 +13,12 @@
   <Actions>
     <FlowDocumentItemAction>
       <ActionProperties>
-        <UniqueId>b204818d-6c47-4daa-8813-8df73eb654f4</UniqueId>
+        <UniqueId>a35009a0-9e4f-41a3-a382-4c15be449cc5</UniqueId>
         <DocumentItemData>
           <SharingConnection>false</SharingConnection>
           <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
         </DocumentItemData>
-        <ActionId>b204818d-6c47-4daa-8813-8df73eb654f4</ActionId>
+        <ActionId>a35009a0-9e4f-41a3-a382-4c15be449cc5</ActionId>
         <SharedItemPath>
           <Path />
           <UncPath />
@@ -28,8 +28,8 @@
           <NormalBounds>
             <Height>39</Height>
             <Width>160</Width>
-            <X>-29.543653</X>
-            <Y>197.5994</Y>
+            <X>-419.35098</X>
+            <Y>70.184235</Y>
             <IsExpanded>false</IsExpanded>
             <ActualExpandedHeight>0</ActualExpandedHeight>
             <IsSorted>false</IsSorted>
@@ -46,7 +46,7 @@
         <IsShared>false</IsShared>
         <PythonCode>def build_message(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; TemplateParams :  &#xD;
 &#xD;
-    Name = "FinGuard Technical Lead" &#xD;
+    Name = "Commodity Intelligence Engine Active" &#xD;
 &#xD;
     return TemplateParams(Name) </PythonCode>
         <ReturnVariable>result</ReturnVariable>
@@ -100,7 +100,7 @@
           <TemplateType>Template</TemplateType>
           <UseClusterMasterPrompt>false</UseClusterMasterPrompt>
           <Llm>
-            <Id>cb50eecc-5c5f-432f-9885-39c358616b35</Id>
+            <Id>a3b398c4-7a48-47f0-a040-9585c70e7a63</Id>
             <StreamResponseToUser>false</StreamResponseToUser>
             <ReturnsStructuredOutput>false</ReturnsStructuredOutput>
             <OutputLayout IsHierarchicalFile="false">
@@ -144,23 +144,13 @@
           </Llm>
           <FilePath />
           <Name>Template</Name>
-          <Text>{AgentName} is online. 🚀&#xD;
+          <Text>🌟 {AgentName}&#xD;
 &#xD;
-I am your Technical Stock Analyst. I can provide deep-dive technical insights, support/resistance levels, and trend analysis for major stocks.&#xD;
+I am Agent C, specialized in real-time pricing for Gold, Silver, and other precious metals.&#xD;
 &#xD;
-Quick Start Tickers:&#xD;
+Supported Symbols: XAU (Gold), XAG (Silver), XPT (Platinum), XPD (Palladium).&#xD;
 &#xD;
-🍏 AAPL (Apple Inc.)&#xD;
-&#xD;
-🍟 NVDA (NVIDIA Corp)&#xD;
-&#xD;
-🚀 TSLA (Tesla, Inc.)&#xD;
-&#xD;
-☁️ MSFT (Microsoft)&#xD;
-&#xD;
-🔍 GOOGL (Alphabet Inc.)&#xD;
-&#xD;
-Instructions: Please enter a valid Stock Ticker Symbol (e.g., AAPL) to begin the analysis.</Text>
+Please enter the Symbol to fetch live market rates:</Text>
           <CanTemplateBeEmpty>true</CanTemplateBeEmpty>
           <Functions />
           <ReturnVariable>result</ReturnVariable>
@@ -191,12 +181,12 @@ Instructions: Please enter a valid Stock Ticker Symbol (e.g., AAPL) to begin the
     </FlowDocumentItemAction>
     <FlowDocumentItemAction>
       <ActionProperties>
-        <UniqueId>52534d3e-972b-426d-8a4e-586758c694da</UniqueId>
+        <UniqueId>7f52584b-a4c9-4aae-b729-bfd0d60f1b5b</UniqueId>
         <DocumentItemData>
           <SharingConnection>false</SharingConnection>
           <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
         </DocumentItemData>
-        <ActionId>52534d3e-972b-426d-8a4e-586758c694da</ActionId>
+        <ActionId>7f52584b-a4c9-4aae-b729-bfd0d60f1b5b</ActionId>
         <SharedItemPath>
           <Path />
           <UncPath />
@@ -206,8 +196,8 @@ Instructions: Please enter a valid Stock Ticker Symbol (e.g., AAPL) to begin the
           <NormalBounds>
             <Height>39</Height>
             <Width>160</Width>
-            <X>1098.0746</X>
-            <Y>46.451324</Y>
+            <X>798.45166</X>
+            <Y>235.34595</Y>
             <IsExpanded>false</IsExpanded>
             <ActualExpandedHeight>0</ActualExpandedHeight>
             <IsSorted>false</IsSorted>
@@ -277,7 +267,7 @@ Instructions: Please enter a valid Stock Ticker Symbol (e.g., AAPL) to begin the
           <TemplateType>Template</TemplateType>
           <UseClusterMasterPrompt>false</UseClusterMasterPrompt>
           <Llm>
-            <Id>54963d45-0a1e-4e85-9193-480eb2dec24b</Id>
+            <Id>588db8a5-ae50-46dc-85e4-daa26dacf89b</Id>
             <StreamResponseToUser>false</StreamResponseToUser>
             <ReturnsStructuredOutput>false</ReturnsStructuredOutput>
             <OutputLayout IsHierarchicalFile="false">
@@ -356,12 +346,12 @@ Thank you for using the Multi-Agent Intelligence Suite.&#xD;
     </FlowDocumentItemAction>
     <FlowDocumentItemAction>
       <ActionProperties>
-        <UniqueId>6a89a214-dedc-4fdd-8f8f-111072894ced</UniqueId>
+        <UniqueId>35dc6c4b-aafb-482c-9cf0-29e1c0395501</UniqueId>
         <DocumentItemData>
           <SharingConnection>false</SharingConnection>
           <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
         </DocumentItemData>
-        <ActionId>6a89a214-dedc-4fdd-8f8f-111072894ced</ActionId>
+        <ActionId>35dc6c4b-aafb-482c-9cf0-29e1c0395501</ActionId>
         <SharedItemPath>
           <Path />
           <UncPath />
@@ -371,8 +361,8 @@ Thank you for using the Multi-Agent Intelligence Suite.&#xD;
           <NormalBounds>
             <Height>39</Height>
             <Width>110</Width>
-            <X>1383.2623</X>
-            <Y>-154.84978</Y>
+            <X>935.1017</X>
+            <Y>68.37003</Y>
             <IsExpanded>false</IsExpanded>
             <ActualExpandedHeight>0</ActualExpandedHeight>
             <IsSorted>false</IsSorted>
@@ -568,7 +558,7 @@ Thank you for using the Multi-Agent Intelligence Suite.&#xD;
           <TemplateType>Template</TemplateType>
           <UseClusterMasterPrompt>false</UseClusterMasterPrompt>
           <Llm>
-            <Id>72d90363-cc62-43fa-93d3-002b01fa92a2</Id>
+            <Id>bb014faf-cfbd-4d34-9e36-1348e01daf8c</Id>
             <StreamResponseToUser>false</StreamResponseToUser>
             <ReturnsStructuredOutput>false</ReturnsStructuredOutput>
             <OutputLayout IsHierarchicalFile="false">
@@ -645,12 +635,12 @@ Thank you for using the Multi-Agent Intelligence Suite.&#xD;
     </FlowDocumentItemAction>
     <FlowDocumentItemAction>
       <ActionProperties>
-        <UniqueId>7990f6e3-a553-44dc-aa02-58ee25bfdb04</UniqueId>
+        <UniqueId>56f489e9-684e-49c6-8b0c-a96b1f3992c5</UniqueId>
         <DocumentItemData>
           <SharingConnection>false</SharingConnection>
           <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
         </DocumentItemData>
-        <ActionId>7990f6e3-a553-44dc-aa02-58ee25bfdb04</ActionId>
+        <ActionId>56f489e9-684e-49c6-8b0c-a96b1f3992c5</ActionId>
         <SharedItemPath>
           <Path />
           <UncPath />
@@ -660,8 +650,8 @@ Thank you for using the Multi-Agent Intelligence Suite.&#xD;
           <NormalBounds>
             <Height>39</Height>
             <Width>110</Width>
-            <X>214.03215</X>
-            <Y>220.74222</Y>
+            <X>-148.05789</X>
+            <Y>100.56171</Y>
             <IsExpanded>false</IsExpanded>
             <ActualExpandedHeight>0</ActualExpandedHeight>
             <IsSorted>false</IsSorted>
@@ -696,7 +686,7 @@ Thank you for using the Multi-Agent Intelligence Suite.&#xD;
             <RecordField DataType="String" Index="0" Name="Message">
               <AggregateFunction>Last</AggregateFunction>
               <DbProviderType>SqlServer</DbProviderType>
-              <UniqueId>d062a605-3678-45c2-b326-e880bfff6220</UniqueId>
+              <UniqueId>8b923e02-0e48-4593-9a78-5d82851b3477</UniqueId>
               <CoreDbType>NVarChar</CoreDbType>
               <DbDataTypeName />
               <DecimalLength>0</DecimalLength>
@@ -726,7 +716,7 @@ Thank you for using the Multi-Agent Intelligence Suite.&#xD;
             <RecordField DataType="String" Index="0" Name="Message">
               <AggregateFunction>Last</AggregateFunction>
               <DbProviderType>SqlServer</DbProviderType>
-              <UniqueId>d062a605-3678-45c2-b326-e880bfff6220</UniqueId>
+              <UniqueId>8b923e02-0e48-4593-9a78-5d82851b3477</UniqueId>
               <CoreDbType>NVarChar</CoreDbType>
               <DbDataTypeName />
               <DecimalLength>0</DecimalLength>
@@ -741,12 +731,12 @@ Thank you for using the Multi-Agent Intelligence Suite.&#xD;
     </FlowDocumentItemAction>
     <FlowDocumentItemAction>
       <ActionProperties>
-        <UniqueId>b79aa9b0-d15b-4cc0-9d1e-b0ab257532a5</UniqueId>
+        <UniqueId>62445365-24ee-4729-ab37-371ccfa1fa5d</UniqueId>
         <DocumentItemData>
           <SharingConnection>false</SharingConnection>
           <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
         </DocumentItemData>
-        <ActionId>b79aa9b0-d15b-4cc0-9d1e-b0ab257532a5</ActionId>
+        <ActionId>62445365-24ee-4729-ab37-371ccfa1fa5d</ActionId>
         <SharedItemPath>
           <Path />
           <UncPath />
@@ -756,8 +746,8 @@ Thank you for using the Multi-Agent Intelligence Suite.&#xD;
           <NormalBounds>
             <Height>39</Height>
             <Width>110</Width>
-            <X>842.8525</X>
-            <Y>233.97862</Y>
+            <X>389.45447</X>
+            <Y>111.33531</Y>
             <IsExpanded>false</IsExpanded>
             <ActualExpandedHeight>0</ActualExpandedHeight>
             <IsSorted>false</IsSorted>
@@ -775,21 +765,22 @@ Thank you for using the Multi-Agent Intelligence Suite.&#xD;
         <PythonCode>import requests&#xD;
 &#xD;
 def build_prompt(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; TemplateParams :&#xD;
-    ticker = agent_context.State.InputMessage.Message&#xD;
+    # User input (e.g., XAU)&#xD;
+    symbol = agent_context.State.InputMessage.Message.upper().strip()&#xD;
     &#xD;
-    # Public endpoint jo Yahoo Finance ka data deta hai (No Key Required for basic)&#xD;
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"&#xD;
+    # Gold API URL&#xD;
+    url = f"https://api.gold-api.com/price/{symbol}"&#xD;
     &#xD;
-    headers = {'User-Agent': 'Mozilla/5.0'} # Yahoo blocks empty agents&#xD;
-&#xD;
     try:&#xD;
-        response = requests.get(url, headers=headers, timeout=10)&#xD;
-        # Price aur previous close nikalne ke liye&#xD;
-        market_data = response.text &#xD;
+        response = requests.get(url, timeout=10)&#xD;
+        if response.status_code == 200:&#xD;
+            price_data = response.text # Raw JSON data&#xD;
+        else:&#xD;
+            price_data = f"Error: API returned status {response.status_code}"&#xD;
     except Exception as e:&#xD;
-        market_data = f"Error: {str(e)}"&#xD;
+        price_data = f"Connection Error: {str(e)}"&#xD;
     &#xD;
-    return TemplateParams(ticker, market_data)</PythonCode>
+    return TemplateParams(symbol, price_data)</PythonCode>
         <ReturnVariable>result</ReturnVariable>
         <StateLayout IsHierarchicalFile="false">
           <IsFolder>false</IsFolder>
@@ -810,21 +801,21 @@ def build_prompt(agent_context : AiAgentContext, data_context : AiDataContext) -
             <RecordField DataType="String" Index="0" Name="LlmName">
               <AggregateFunction>Last</AggregateFunction>
               <DbProviderType>SqlServer</DbProviderType>
-              <UniqueId>6b8c97fe-4af2-4a32-81b9-c6d1e6c24783</UniqueId>
+              <UniqueId>dfe94dc8-bdc0-4ecf-91f3-e339194efcb3</UniqueId>
               <CoreDbType>Unsupported</CoreDbType>
               <DecimalLength>0</DecimalLength>
             </RecordField>
             <RecordField DataType="String" Index="1" Name="Prompt">
               <AggregateFunction>Last</AggregateFunction>
               <DbProviderType>SqlServer</DbProviderType>
-              <UniqueId>80001d48-cd6c-40b1-a319-e80e0967c9f9</UniqueId>
+              <UniqueId>958ab317-f7ae-4848-a206-625e9bce99ee</UniqueId>
               <CoreDbType>Unsupported</CoreDbType>
               <DecimalLength>0</DecimalLength>
             </RecordField>
             <RecordField DataType="String" Index="2" Name="Response">
               <AggregateFunction>Last</AggregateFunction>
               <DbProviderType>SqlServer</DbProviderType>
-              <UniqueId>0b460c30-a34d-40d0-ad60-d878af15a07e</UniqueId>
+              <UniqueId>52cc6c10-544b-478a-ba8e-047f48963638</UniqueId>
               <CoreDbType>Unsupported</CoreDbType>
               <DecimalLength>0</DecimalLength>
             </RecordField>
@@ -853,21 +844,21 @@ def build_prompt(agent_context : AiAgentContext, data_context : AiDataContext) -
             <RecordField DataType="String" Index="0" Name="LlmName">
               <AggregateFunction>Last</AggregateFunction>
               <DbProviderType>SqlServer</DbProviderType>
-              <UniqueId>6b8c97fe-4af2-4a32-81b9-c6d1e6c24783</UniqueId>
+              <UniqueId>dfe94dc8-bdc0-4ecf-91f3-e339194efcb3</UniqueId>
               <CoreDbType>Unsupported</CoreDbType>
               <DecimalLength>0</DecimalLength>
             </RecordField>
             <RecordField DataType="String" Index="1" Name="Prompt">
               <AggregateFunction>Last</AggregateFunction>
               <DbProviderType>SqlServer</DbProviderType>
-              <UniqueId>80001d48-cd6c-40b1-a319-e80e0967c9f9</UniqueId>
+              <UniqueId>958ab317-f7ae-4848-a206-625e9bce99ee</UniqueId>
               <CoreDbType>Unsupported</CoreDbType>
               <DecimalLength>0</DecimalLength>
             </RecordField>
             <RecordField DataType="String" Index="2" Name="Response">
               <AggregateFunction>Last</AggregateFunction>
               <DbProviderType>SqlServer</DbProviderType>
-              <UniqueId>0b460c30-a34d-40d0-ad60-d878af15a07e</UniqueId>
+              <UniqueId>52cc6c10-544b-478a-ba8e-047f48963638</UniqueId>
               <CoreDbType>Unsupported</CoreDbType>
               <DecimalLength>0</DecimalLength>
             </RecordField>
@@ -885,7 +876,7 @@ def build_prompt(agent_context : AiAgentContext, data_context : AiDataContext) -
           <TemplateType>Template</TemplateType>
           <UseClusterMasterPrompt>false</UseClusterMasterPrompt>
           <Llm>
-            <Id>7e1babef-4a80-4feb-90e0-d3daf353f114</Id>
+            <Id>ed73d20c-3766-409b-89ee-b80966eaff12</Id>
             <StreamResponseToUser>false</StreamResponseToUser>
             <ReturnsStructuredOutput>false</ReturnsStructuredOutput>
             <OutputLayout IsHierarchicalFile="false">
@@ -929,38 +920,28 @@ def build_prompt(agent_context : AiAgentContext, data_context : AiDataContext) -
           </Llm>
           <FilePath />
           <Name>Template</Name>
-          <Text>System: You are a Senior Quantitative Analyst at a top-tier investment bank. You are known for precise, data-driven insights. You MUST use the provided raw JSON data to construct a report. Do not mention that you are an AI or lack tools.&#xD;
+          <Text>System: You are a Precious Metals Analyst. You receive live price data and must provide a concise market update.&#xD;
 &#xD;
-Ticker: {ticker}&#xD;
+Asset Symbol: {symbol} Live API Data: {price_data}&#xD;
 &#xD;
-Market Context (JSON): {market_data}&#xD;
+Tasks:&#xD;
 &#xD;
-Task: Analyze the provided chart data and generate a professional "Executive Summary".&#xD;
+Extract the current price and currency.&#xD;
 &#xD;
-Instructions:&#xD;
+Create a small table showing the "Spot Price" and "Last Updated" timestamp.&#xD;
 &#xD;
-Data Table: Create a neat Markdown table for: Current Price, Previous Close, Day High/Low, and 52-Week High/Low.&#xD;
+Provide a brief "Market Insight" (e.g., if price is high, mention it as a safe-haven asset).&#xD;
 &#xD;
-Technical Stance: Compare the 'Current Price' with 'Previous Close'. If Current &gt; Previous, the trend is Bullish 🟢; if lower, it is Bearish 🔴.&#xD;
-&#xD;
-Range Analysis: Tell the user where the current price sits within the 52-week range (e.g., "Trading at 95% of its yearly high").&#xD;
-&#xD;
-Verdict: Provide a one-sentence final recommendation (Buy/Hold/Sell) based strictly on this price action.&#xD;
-&#xD;
-Constraint: If the data is empty or invalid, respond with: "Critical Error: Ticker not recognized or API limit reached."</Text>
+Ensure the output is formatted in clean Markdown.</Text>
           <CanTemplateBeEmpty>false</CanTemplateBeEmpty>
-          <Functions>
-            <string>ActionTemplates.GetDataflowActionTemplatesAsync</string>
-            <string>API.CreateSharedRestApiConnection</string>
-            <string>API.ListSharedRestApiConnections</string>
-          </Functions>
+          <Functions />
           <ErrorInfo>
             <IsAPIException>false</IsAPIException>
             <StatusCode>500</StatusCode>
             <IsCPException>false</IsCPException>
             <IsUnhandledException>false</IsUnhandledException>
             <IsCrash>false</IsCrash>
-            <Message>Invalid parameter name 1. Position Line 4, Column 24</Message>
+            <Message>Parameter name cannot be empty. Position Line 2, Column 37</Message>
             <ProductVersion>12.1.0.744</ProductVersion>
             <OSVersion>Microsoft Windows NT 10.0.26100.0</OSVersion>
             <DbConnectionTimeout>-1</DbConnectionTimeout>
@@ -997,12 +978,12 @@ Constraint: If the data is empty or invalid, respond with: "Critical Error: Tick
     </FlowDocumentItemAction>
     <FlowDocumentItemAction>
       <ActionProperties>
-        <UniqueId>e33edbd7-7643-49d9-a160-ee2260e2a097</UniqueId>
+        <UniqueId>8754384a-c590-4561-981c-4f7c02b79aac</UniqueId>
         <DocumentItemData>
           <SharingConnection>false</SharingConnection>
           <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
         </DocumentItemData>
-        <ActionId>e33edbd7-7643-49d9-a160-ee2260e2a097</ActionId>
+        <ActionId>8754384a-c590-4561-981c-4f7c02b79aac</ActionId>
         <SharedItemPath>
           <Path />
           <UncPath />
@@ -1012,8 +993,8 @@ Constraint: If the data is empty or invalid, respond with: "Critical Error: Tick
           <NormalBounds>
             <Height>39</Height>
             <Width>110</Width>
-            <X>1166.0764</X>
-            <Y>236.94522</Y>
+            <X>627.7235</X>
+            <Y>108.459175</Y>
             <IsExpanded>false</IsExpanded>
             <ActualExpandedHeight>0</ActualExpandedHeight>
             <IsSorted>false</IsSorted>
@@ -1053,7 +1034,7 @@ Constraint: If the data is empty or invalid, respond with: "Critical Error: Tick
             <RecordField DataType="String" Index="0" Name="Message">
               <AggregateFunction>Last</AggregateFunction>
               <DbProviderType>SqlServer</DbProviderType>
-              <UniqueId>f2487b77-31f2-4168-8ca6-0fd05e3ddf1e</UniqueId>
+              <UniqueId>a134df73-869c-41d9-a91a-14f2fc784b22</UniqueId>
               <CoreDbType>NVarChar</CoreDbType>
               <DbDataTypeName />
               <DecimalLength>0</DecimalLength>
@@ -1083,7 +1064,7 @@ Constraint: If the data is empty or invalid, respond with: "Critical Error: Tick
             <RecordField DataType="String" Index="0" Name="Message">
               <AggregateFunction>Last</AggregateFunction>
               <DbProviderType>SqlServer</DbProviderType>
-              <UniqueId>f2487b77-31f2-4168-8ca6-0fd05e3ddf1e</UniqueId>
+              <UniqueId>a134df73-869c-41d9-a91a-14f2fc784b22</UniqueId>
               <CoreDbType>NVarChar</CoreDbType>
               <DbDataTypeName />
               <DecimalLength>0</DecimalLength>
@@ -1102,7 +1083,7 @@ Constraint: If the data is empty or invalid, respond with: "Critical Error: Tick
           <TemplateType>Template</TemplateType>
           <UseClusterMasterPrompt>false</UseClusterMasterPrompt>
           <Llm>
-            <Id>a1b28fe0-461b-495f-8fd7-90851e28a76e</Id>
+            <Id>3ae7eea4-a19d-4204-9183-a37c1c4d3d81</Id>
             <StreamResponseToUser>false</StreamResponseToUser>
             <ReturnsStructuredOutput>false</ReturnsStructuredOutput>
             <OutputLayout IsHierarchicalFile="false">
@@ -1179,209 +1160,12 @@ Constraint: If the data is empty or invalid, respond with: "Critical Error: Tick
     </FlowDocumentItemAction>
     <FlowDocumentItemAction>
       <ActionProperties>
-        <UniqueId>4fa0aeaa-55f4-46f0-b24b-15867b9af233</UniqueId>
+        <UniqueId>8984428b-7226-4306-b66e-f9ca6f010648</UniqueId>
         <DocumentItemData>
           <SharingConnection>false</SharingConnection>
           <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
         </DocumentItemData>
-        <ActionId>4fa0aeaa-55f4-46f0-b24b-15867b9af233</ActionId>
-        <SharedItemPath>
-          <Path />
-          <UncPath />
-        </SharedItemPath>
-        <ActionTemplateName>AiCondition</ActionTemplateName>
-        <NodeBounds>
-          <NormalBounds>
-            <Height>39</Height>
-            <Width>240</Width>
-            <X>346.45312</X>
-            <Y>234.74678</Y>
-            <IsExpanded>true</IsExpanded>
-            <ActualExpandedHeight>0</ActualExpandedHeight>
-            <IsSorted>false</IsSorted>
-          </NormalBounds>
-        </NodeBounds>
-        <IsSkip>false</IsSkip>
-        <IsHidden>false</IsHidden>
-        <SourceActionRole>Normal</SourceActionRole>
-        <DoNotPushdown>false</DoNotPushdown>
-        <Name>Condition</Name>
-      </ActionProperties>
-      <AiFlowItemDataCondition>
-        <Name>Condition</Name>
-        <IsShared>false</IsShared>
-        <PythonCode>def run(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; str : 
-    return ""</PythonCode>
-        <ReturnVariable>result</ReturnVariable>
-        <StateLayout IsHierarchicalFile="false">
-          <IsFolder>false</IsFolder>
-          <Id>0</Id>
-          <IsNewRecord>false</IsNewRecord>
-          <Name>Condition</Name>
-          <Description />
-          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
-          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
-          <IsSharedLayout>false</IsSharedLayout>
-          <LayoutBuildingOptions>
-            <RecordType>Record</RecordType>
-            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
-            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
-          </LayoutBuildingOptions>
-          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
-          <Fields />
-          <Children />
-          <Referenced />
-          <ValidationRules />
-          <IsReadOnly>false</IsReadOnly>
-        </StateLayout>
-        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
-          <IsFolder>false</IsFolder>
-          <Id>0</Id>
-          <IsNewRecord>false</IsNewRecord>
-          <Name>Condition</Name>
-          <Description />
-          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
-          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
-          <IsSharedLayout>false</IsSharedLayout>
-          <LayoutBuildingOptions>
-            <RecordType>Record</RecordType>
-            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
-            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
-          </LayoutBuildingOptions>
-          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
-          <Fields />
-          <Children />
-          <Referenced />
-          <ValidationRules />
-          <IsReadOnly>false</IsReadOnly>
-        </Layout>
-        <Conditions>
-          <AiConditionExpression>
-            <Name>ticker checking</Name>
-            <IsElse>false</IsElse>
-            <PythonCode>def Condition_1(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; bool :&#xD;
-    # Method 1: Direct property access (Most likely to work in Atomis)&#xD;
-    try:&#xD;
-        user_input = agent_context.State.InputMessage.Message.strip().upper()&#xD;
-    except:&#xD;
-        # Method 2: Fallback to Variable access if dictionary fails&#xD;
-        user_input = agent_context.State.InputMessage.Message.strip().upper()&#xD;
-    &#xD;
-    valid_tickers = ["AAPL", "NVDA", "TSLA", "MSFT", "GOOGL", "AMZN", "META"]&#xD;
-    &#xD;
-    if user_input in valid_tickers:&#xD;
-        return True&#xD;
-        &#xD;
-    return False</PythonCode>
-            <CondtionMethodName>Condition 1</CondtionMethodName>
-            <ReturnVariable />
-          </AiConditionExpression>
-        </Conditions>
-        <OutgoingLinks>
-          <string>ticker checking</string>
-        </OutgoingLinks>
-      </AiFlowItemDataCondition>
-    </FlowDocumentItemAction>
-    <FlowDocumentItemAction>
-      <ActionProperties>
-        <UniqueId>d1d99f45-7aab-4179-8023-db5ded2889cb</UniqueId>
-        <DocumentItemData>
-          <SharingConnection>false</SharingConnection>
-          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
-        </DocumentItemData>
-        <ActionId>d1d99f45-7aab-4179-8023-db5ded2889cb</ActionId>
-        <SharedItemPath>
-          <Path />
-          <UncPath />
-        </SharedItemPath>
-        <ActionTemplateName>AiPythonCode</ActionTemplateName>
-        <NodeBounds>
-          <NormalBounds>
-            <Height>39</Height>
-            <Width>110</Width>
-            <X>643.86005</X>
-            <Y>229.21498</Y>
-            <IsExpanded>false</IsExpanded>
-            <ActualExpandedHeight>0</ActualExpandedHeight>
-            <IsSorted>false</IsSorted>
-          </NormalBounds>
-        </NodeBounds>
-        <IsSkip>false</IsSkip>
-        <IsHidden>false</IsHidden>
-        <SourceActionRole>Normal</SourceActionRole>
-        <DoNotPushdown>false</DoNotPushdown>
-        <Name>PythonCode</Name>
-      </ActionProperties>
-      <AiFlowItemDataPythonCode>
-        <Name>PythonCode</Name>
-        <IsShared>false</IsShared>
-        <PythonCode>import requests&#xD;
-&#xD;
-def run(agent_context : AiAgentContext, data_context : AiDataContext):&#xD;
-    ticker = agent_context.State.InputMessage.Message&#xD;
-    api_key = "get from env"&#xD;
-    url = f"https://www.alphavantage.co/query?function=GLOBAL_QUOTE&amp;symbol={ticker}&amp;apikey={api_key}"&#xD;
-    &#xD;
-    try:&#xD;
-        response = requests.get(url, timeout=5)&#xD;
-        data = response.json()&#xD;
-        # Hum pura data return kar rahe hain jo LLM ke paas jayega&#xD;
-        return str(data) &#xD;
-    except Exception as e:&#xD;
-        return f"Error fetching data: {str(e)}"</PythonCode>
-        <ReturnVariable>result</ReturnVariable>
-        <StateLayout IsHierarchicalFile="false">
-          <IsFolder>false</IsFolder>
-          <Id>0</Id>
-          <IsNewRecord>false</IsNewRecord>
-          <Name>PythonCode</Name>
-          <Description />
-          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
-          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
-          <IsSharedLayout>false</IsSharedLayout>
-          <LayoutBuildingOptions>
-            <RecordType>Record</RecordType>
-            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
-            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
-          </LayoutBuildingOptions>
-          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
-          <Fields />
-          <Children />
-          <Referenced />
-          <ValidationRules />
-          <IsReadOnly>false</IsReadOnly>
-        </StateLayout>
-        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
-          <IsFolder>false</IsFolder>
-          <Id>0</Id>
-          <IsNewRecord>false</IsNewRecord>
-          <Name>PythonCode</Name>
-          <Description />
-          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
-          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
-          <IsSharedLayout>false</IsSharedLayout>
-          <LayoutBuildingOptions>
-            <RecordType>Record</RecordType>
-            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
-            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
-          </LayoutBuildingOptions>
-          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
-          <Fields />
-          <Children />
-          <Referenced />
-          <ValidationRules />
-          <IsReadOnly>false</IsReadOnly>
-        </Layout>
-      </AiFlowItemDataPythonCode>
-    </FlowDocumentItemAction>
-    <FlowDocumentItemAction>
-      <ActionProperties>
-        <UniqueId>919f429c-39b6-4cc1-bd37-4c80af95a72a</UniqueId>
-        <DocumentItemData>
-          <SharingConnection>false</SharingConnection>
-          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
-        </DocumentItemData>
-        <ActionId>919f429c-39b6-4cc1-bd37-4c80af95a72a</ActionId>
+        <ActionId>8984428b-7226-4306-b66e-f9ca6f010648</ActionId>
         <SharedItemPath>
           <Path />
           <UncPath />
@@ -1391,8 +1175,8 @@ def run(agent_context : AiAgentContext, data_context : AiDataContext):&#xD;
           <NormalBounds>
             <Height>200</Height>
             <Width>200</Width>
-            <X>467.46127</X>
-            <Y>502.28732</Y>
+            <X>-159.15202</X>
+            <Y>375.1664</Y>
             <IsExpanded>false</IsExpanded>
             <ActualExpandedHeight>0</ActualExpandedHeight>
             <IsSorted>false</IsSorted>
@@ -1408,7 +1192,6 @@ def run(agent_context : AiAgentContext, data_context : AiDataContext):&#xD;
         <Name>OutputMessage1</Name>
         <IsShared>false</IsShared>
         <PythonCode>def build_message(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; TemplateParams :  &#xD;
-&#xD;
 &#xD;
     return TemplateParams() </PythonCode>
         <ReturnVariable>result</ReturnVariable>
@@ -1431,7 +1214,7 @@ def run(agent_context : AiAgentContext, data_context : AiDataContext):&#xD;
             <RecordField DataType="String" Index="0" Name="Message">
               <AggregateFunction>Last</AggregateFunction>
               <DbProviderType>SqlServer</DbProviderType>
-              <UniqueId>7c4a28bb-3438-4055-99a1-bb0304232e4e</UniqueId>
+              <UniqueId>b20e1e6b-760f-40ef-b262-4dbac0699ae8</UniqueId>
               <CoreDbType>NVarChar</CoreDbType>
               <DbDataTypeName />
               <DecimalLength>0</DecimalLength>
@@ -1461,7 +1244,7 @@ def run(agent_context : AiAgentContext, data_context : AiDataContext):&#xD;
             <RecordField DataType="String" Index="0" Name="Message">
               <AggregateFunction>Last</AggregateFunction>
               <DbProviderType>SqlServer</DbProviderType>
-              <UniqueId>7c4a28bb-3438-4055-99a1-bb0304232e4e</UniqueId>
+              <UniqueId>b20e1e6b-760f-40ef-b262-4dbac0699ae8</UniqueId>
               <CoreDbType>NVarChar</CoreDbType>
               <DbDataTypeName />
               <DecimalLength>0</DecimalLength>
@@ -1480,7 +1263,7 @@ def run(agent_context : AiAgentContext, data_context : AiDataContext):&#xD;
           <TemplateType>Template</TemplateType>
           <UseClusterMasterPrompt>false</UseClusterMasterPrompt>
           <Llm>
-            <Id>48498227-67ff-4cd5-905b-085e7e526499</Id>
+            <Id>e1a1755f-a6d2-4ae7-8d62-8bb84f5c5baa</Id>
             <StreamResponseToUser>false</StreamResponseToUser>
             <ReturnsStructuredOutput>false</ReturnsStructuredOutput>
             <OutputLayout IsHierarchicalFile="false">
@@ -1553,55 +1336,154 @@ def run(agent_context : AiAgentContext, data_context : AiDataContext):&#xD;
         </Template>
       </AiFlowItemDataUserOutput>
     </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>fddea4ff-a9c2-4ebc-8a9d-c0a4a1e64614</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>fddea4ff-a9c2-4ebc-8a9d-c0a4a1e64614</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>AiCondition</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>39</Height>
+            <Width>240</Width>
+            <X>45.036903</X>
+            <Y>33.21458</Y>
+            <IsExpanded>true</IsExpanded>
+            <ActualExpandedHeight>0</ActualExpandedHeight>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>Condition</Name>
+      </ActionProperties>
+      <AiFlowItemDataCondition>
+        <Name>Condition</Name>
+        <IsShared>false</IsShared>
+        <PythonCode>def run(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; str : 
+    return ""</PythonCode>
+        <ReturnVariable>result</ReturnVariable>
+        <StateLayout IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Condition</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>false</IsReadOnly>
+        </StateLayout>
+        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Condition</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <IsReadOnly>false</IsReadOnly>
+        </Layout>
+        <Conditions>
+          <AiConditionExpression>
+            <Name>Condition 1</Name>
+            <IsElse>false</IsElse>
+            <PythonCode>def Condition_1(agent_context : AiAgentContext, data_context : AiDataContext) -&gt; bool :&#xD;
+    # Method 1: Direct property access (Most likely to work in Atomis)&#xD;
+    try:&#xD;
+        user_input = agent_context.State.InputMessage.Message.strip().upper()&#xD;
+    except:&#xD;
+        # Method 2: Fallback to Variable access if dictionary fails&#xD;
+        user_input = agent_context.State.InputMessage.Message.strip().upper()&#xD;
+    &#xD;
+    valid_tickers = ["XAU", "XAG", "XPT", "XPD"]&#xD;
+    &#xD;
+    if user_input in valid_tickers:&#xD;
+        return True&#xD;
+        &#xD;
+    return False</PythonCode>
+            <CondtionMethodName>Condition 1</CondtionMethodName>
+            <ReturnVariable />
+          </AiConditionExpression>
+        </Conditions>
+        <OutgoingLinks>
+          <string>Condition 1</string>
+        </OutgoingLinks>
+      </AiFlowItemDataCondition>
+    </FlowDocumentItemAction>
   </Actions>
   <Links>
     <FlowDocumentItemLink>
-      <UniqueId>4678a247-a094-4b90-8d9d-95c2bc4964e3</UniqueId>
+      <UniqueId>c28ab2b2-d027-4503-a03e-16a213778112</UniqueId>
       <Start>Start</Start>
       <End>InputMessage</End>
       <LinkType>Normal</LinkType>
     </FlowDocumentItemLink>
     <FlowDocumentItemLink>
-      <UniqueId>068de7ef-a007-4f95-9c80-9b2eec0b245c</UniqueId>
+      <UniqueId>04b0d3b9-2d69-4bd1-8828-c02dc284f3d2</UniqueId>
       <Start>LlmCall</Start>
       <End>OutputMessage</End>
       <LinkType>Normal</LinkType>
     </FlowDocumentItemLink>
     <FlowDocumentItemLink>
-      <UniqueId>f3b09f89-0eb4-4bbc-adff-89f62491af13</UniqueId>
+      <UniqueId>86cc3c77-ace5-4229-821a-4ff5f476807d</UniqueId>
       <Start>InputMessage</Start>
       <End>Condition</End>
       <IncomingLink />
       <LinkType>Normal</LinkType>
     </FlowDocumentItemLink>
     <FlowDocumentItemLink>
-      <UniqueId>163b6d2e-3d9c-42ae-a6f7-5dc3b438f694</UniqueId>
+      <UniqueId>42451e11-4862-4bf8-88e9-740af78f9e52</UniqueId>
       <Start>Condition</Start>
-      <End>PythonCode</End>
-      <Condition>ticker checking</Condition>
-      <LinkType>Normal</LinkType>
-    </FlowDocumentItemLink>
-    <FlowDocumentItemLink>
-      <UniqueId>b73ce163-8cd3-43a8-9f8d-cd4291d45999</UniqueId>
-      <Start>PythonCode</Start>
       <End>LlmCall</End>
+      <Condition>Condition 1</Condition>
       <LinkType>Normal</LinkType>
     </FlowDocumentItemLink>
     <FlowDocumentItemLink>
-      <UniqueId>644dd3b8-47e9-4fc4-95ef-6cae10b819de</UniqueId>
+      <UniqueId>b533e8c9-9ae2-4750-8513-76340f20f0ba</UniqueId>
       <Start>Condition</Start>
       <End>OutputMessage1</End>
       <Condition>Default</Condition>
       <LinkType>Normal</LinkType>
     </FlowDocumentItemLink>
     <FlowDocumentItemLink>
-      <UniqueId>f5c90cd8-9714-437b-98f4-39878306559d</UniqueId>
+      <UniqueId>4ead8c81-b051-4d10-943f-95b128bf4d04</UniqueId>
       <Start>OutputMessage1</Start>
       <End>InputMessage</End>
       <LinkType>Normal</LinkType>
     </FlowDocumentItemLink>
     <FlowDocumentItemLink>
-      <UniqueId>85254671-edbe-465e-86c2-c6a4ea271163</UniqueId>
+      <UniqueId>3df0ed2c-05b5-4f06-af2f-9a73945da70b</UniqueId>
       <Start>OutputMessage</Start>
       <End>End</End>
       <LinkType>Normal</LinkType>
@@ -1610,19 +1492,19 @@ def run(agent_context : AiAgentContext, data_context : AiDataContext):&#xD;
   <Maps />
   <Relationships />
   <VisualInfo>
-    <UniqueId>017c2c91-ea17-45bd-8418-eac2c2d60ddf</UniqueId>
+    <UniqueId>4be5c4cd-402d-4aaf-9693-bd6370ebb0ff</UniqueId>
     <Actions />
     <DocumentBounds>
-      <Item1>-34.54365539550781</Item1>
-      <Item2>-159.8497772216797</Item2>
-      <Item3>1522.8060302734375</Item3>
-      <Item4>767.1370849609375</Item4>
+      <Item1>-419.3509826660156</Item1>
+      <Item2>33.21458053588867</Item2>
+      <Item3>1464.45263671875</Item3>
+      <Item4>446.95184326171875</Item4>
     </DocumentBounds>
     <DocumentPosition>
       <Item1>0</Item1>
       <Item2>0</Item2>
     </DocumentPosition>
-    <DocumentScale>0.5568374</DocumentScale>
+    <DocumentScale>0.7106813</DocumentScale>
     <IsSelected>false</IsSelected>
     <MappingMode>Data</MappingMode>
     <UseMessages>false</UseMessages>
